@@ -12,11 +12,17 @@ namespace RAD_Project.BasicClasses
         protected string user_Name;
         protected string user_Phone;
         protected string user_Type;
+        protected string user_Address;
 
 
         public int Staff_Id {
             get { return user_Id; }
             set {user_Id = value;} 
+        }
+        public string User_Address
+        {
+            get { return user_Address; }
+            set { user_Address = value;}
         }
         public string Name
         {

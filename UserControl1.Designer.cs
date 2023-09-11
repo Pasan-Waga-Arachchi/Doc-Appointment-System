@@ -1,6 +1,6 @@
 ﻿namespace RAD_Project
 {
-    partial class UserControl1AboutUs
+    partial class UserControl1
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,12 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // UserControl1AboutUs
+            // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UserControl1AboutUs";
-            this.Size = new System.Drawing.Size(848, 497);
+            this.Name = "UserControl1";
+            this.Size = new System.Drawing.Size(661, 450);
             this.ResumeLayout(false);
 
         }

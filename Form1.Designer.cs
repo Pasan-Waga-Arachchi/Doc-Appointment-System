@@ -43,12 +43,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
-            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
-            this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
-            this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
             this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
+            this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
+            this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
+            this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
+            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
+            this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -239,34 +241,13 @@
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
-            // userControl1_Home1
+            // userControl1AboutUs1
             // 
-            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControl1_Home1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Home1.Name = "userControl1_Home1";
-            this.userControl1_Home1.Size = new System.Drawing.Size(874, 496);
-            this.userControl1_Home1.TabIndex = 2;
-            // 
-            // userControl1_Login1
-            // 
-            this.userControl1_Login1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Login1.Name = "userControl1_Login1";
-            this.userControl1_Login1.Size = new System.Drawing.Size(874, 501);
-            this.userControl1_Login1.TabIndex = 3;
-            // 
-            // userControl1_Channel1
-            // 
-            this.userControl1_Channel1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Channel1.Name = "userControl1_Channel1";
-            this.userControl1_Channel1.Size = new System.Drawing.Size(874, 501);
-            this.userControl1_Channel1.TabIndex = 4;
-            // 
-            // userControl1_Time1
-            // 
-            this.userControl1_Time1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Time1.Name = "userControl1_Time1";
-            this.userControl1_Time1.Size = new System.Drawing.Size(877, 501);
-            this.userControl1_Time1.TabIndex = 5;
+            this.userControl1AboutUs1.Location = new System.Drawing.Point(265, 56);
+            this.userControl1AboutUs1.Name = "userControl1AboutUs1";
+            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 497);
+            this.userControl1AboutUs1.TabIndex = 7;
+            this.userControl1AboutUs1.Load += new System.EventHandler(this.userControl1AboutUs1_Load);
             // 
             // userControl1_Patients1
             // 
@@ -275,12 +256,43 @@
             this.userControl1_Patients1.Size = new System.Drawing.Size(877, 498);
             this.userControl1_Patients1.TabIndex = 6;
             // 
-            // userControl1AboutUs1
+            // userControl1_Time1
             // 
-            this.userControl1AboutUs1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1AboutUs1.Name = "userControl1AboutUs1";
-            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 497);
-            this.userControl1AboutUs1.TabIndex = 7;
+            this.userControl1_Time1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1_Time1.Name = "userControl1_Time1";
+            this.userControl1_Time1.Size = new System.Drawing.Size(877, 501);
+            this.userControl1_Time1.TabIndex = 5;
+            // 
+            // userControl1_Channel1
+            // 
+            this.userControl1_Channel1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1_Channel1.Name = "userControl1_Channel1";
+            this.userControl1_Channel1.Size = new System.Drawing.Size(874, 501);
+            this.userControl1_Channel1.TabIndex = 4;
+            // 
+            // userControl1_Login1
+            // 
+            this.userControl1_Login1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1_Login1.Name = "userControl1_Login1";
+            this.userControl1_Login1.Size = new System.Drawing.Size(874, 501);
+            this.userControl1_Login1.TabIndex = 3;
+            // 
+            // userControl1_Home1
+            // 
+            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Home1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1_Home1.Name = "userControl1_Home1";
+            this.userControl1_Home1.Size = new System.Drawing.Size(874, 496);
+            this.userControl1_Home1.TabIndex = 2;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(443, 237);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -288,6 +300,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1142, 558);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.userControl1AboutUs1);
             this.Controls.Add(this.userControl1_Patients1);
             this.Controls.Add(this.userControl1_Time1);
@@ -333,6 +346,8 @@
         private UserControl1_Time userControl1_Time1;
         private UserControl1_Patients userControl1_Patients1;
         private UserControl1AboutUs userControl1AboutUs1;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private System.Windows.Forms.Button button8;
     }
 }
 

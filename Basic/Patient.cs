@@ -11,9 +11,14 @@ namespace RAD_Project.BasicClasses
         public Patient() { user_Type = "Patient"; }
         private int age;
         private string deseace;
+        protected DateTime dob;
         private List<Appoinment> appoinmentList=new List<Appoinment>();
         
         
+        public DateTime DOB {
+            get { return dob; }
+            set { dob = value; }
+        }
         public int Age { 
             get { return age; } 
             set { 

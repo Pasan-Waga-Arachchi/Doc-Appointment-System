@@ -131,11 +131,11 @@ namespace RAD_Project
             userControl1_Home1.Show();
             userControl1_Home1.BringToFront();
 
-            userControl1_Login1.Hide();
+            /*userControl1_Login1.Hide();
             userControl1_Channel1.Hide();
             userControl1_Time1.Hide();
             userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
+            userControl1AboutUs1.Hide();*/
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -199,6 +199,11 @@ namespace RAD_Project
             userControl1_Channel1.Hide();
             userControl1_Patients1.Hide();
             userControl1_Time1.Hide();
+        }
+
+        private void userControl1AboutUs1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
