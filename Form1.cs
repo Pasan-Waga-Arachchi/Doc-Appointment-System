@@ -16,6 +16,7 @@ namespace RAD_Project
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -199,6 +200,13 @@ namespace RAD_Project
             userControl1_Channel1.Hide();
             userControl1_Patients1.Hide();
             userControl1_Time1.Hide();
+        }
+       public Panel ControllContainerPanel { 
+            get { return this.controllContainerPanel; } 
+        }
+        public ControlCollection ControllSet
+        {
+            get { return (ControlCollection)this.controllContainerPanel.Controls; }
         }
     }
 }

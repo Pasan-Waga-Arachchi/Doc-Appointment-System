@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace RAD_Project.BasicClasses
+namespace RAD_Project
 {
     class DBconnection
     {

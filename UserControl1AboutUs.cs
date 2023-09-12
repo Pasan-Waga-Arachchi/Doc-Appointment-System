@@ -21,5 +21,13 @@ namespace RAD_Project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control aboutUsController=controller.getUserControll("userControl1_Home1");
+            aboutUsController.Show();
+        }
     }
 }

@@ -16,7 +16,10 @@ namespace RAD_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 form = new Form1();
+            FormController.Form = form;
+            Application.Run(form);
+
         }
     }
 }

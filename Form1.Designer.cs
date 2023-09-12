@@ -1,4 +1,6 @@
-﻿namespace RAD_Project
+﻿using System.Windows.Forms;
+
+namespace RAD_Project
 {
     partial class Form1
     {
@@ -43,16 +45,21 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
-            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
+            this.controllContainerPanel = new System.Windows.Forms.Panel();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
+            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
+            this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
+            this.userControl1_Time2 = new RAD_Project.UserControl1_Time();
             this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
+            this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
+            this.myTestControllercs1 = new RAD_Project.MyTestControllercs();
+            this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.controllContainerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -239,48 +246,95 @@
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
-            // userControl1_Home1
+            // panel4
             // 
-            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControl1_Home1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Home1.Name = "userControl1_Home1";
-            this.userControl1_Home1.Size = new System.Drawing.Size(874, 496);
-            this.userControl1_Home1.TabIndex = 2;
-            // 
-            // userControl1_Login1
-            // 
-            this.userControl1_Login1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Login1.Name = "userControl1_Login1";
-            this.userControl1_Login1.Size = new System.Drawing.Size(874, 501);
-            this.userControl1_Login1.TabIndex = 3;
+            this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
+            this.controllContainerPanel.Controls.Add(this.myTestControllercs1);
+            this.controllContainerPanel.Controls.Add(this.userControl1AboutUs2);
+            this.controllContainerPanel.Controls.Add(this.userControl1AboutUs1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Time2);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Time1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Patients1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Login1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Channel1);
+            this.controllContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.controllContainerPanel.Location = new System.Drawing.Point(265, 58);
+            this.controllContainerPanel.Name = "panel4";
+            this.controllContainerPanel.Size = new System.Drawing.Size(877, 500);
+            this.controllContainerPanel.TabIndex = 2;
             // 
             // userControl1_Channel1
             // 
-            this.userControl1_Channel1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1_Channel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Channel1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_Channel1.Name = "userControl1_Channel1";
-            this.userControl1_Channel1.Size = new System.Drawing.Size(874, 501);
-            this.userControl1_Channel1.TabIndex = 4;
+            this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Channel1.TabIndex = 0;
             // 
-            // userControl1_Time1
+            // userControl1_Login1
             // 
-            this.userControl1_Time1.Location = new System.Drawing.Point(265, 57);
-            this.userControl1_Time1.Name = "userControl1_Time1";
-            this.userControl1_Time1.Size = new System.Drawing.Size(877, 501);
-            this.userControl1_Time1.TabIndex = 5;
+            this.userControl1_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Login1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Login1.Name = "userControl1_Login1";
+            this.userControl1_Login1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Login1.TabIndex = 1;
             // 
             // userControl1_Patients1
             // 
-            this.userControl1_Patients1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_Patients1.Name = "userControl1_Patients1";
-            this.userControl1_Patients1.Size = new System.Drawing.Size(877, 498);
-            this.userControl1_Patients1.TabIndex = 6;
+            this.userControl1_Patients1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Patients1.TabIndex = 2;
+            // 
+            // userControl1_Time1
+            // 
+            this.userControl1_Time1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Time1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Time1.Name = "userControl1_Time1";
+            this.userControl1_Time1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Time1.TabIndex = 3;
+            // 
+            // userControl1_Time2
+            // 
+            this.userControl1_Time2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Time2.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Time2.Name = "userControl1_Time2";
+            this.userControl1_Time2.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Time2.TabIndex = 4;
             // 
             // userControl1AboutUs1
             // 
-            this.userControl1AboutUs1.Location = new System.Drawing.Point(265, 57);
+            this.userControl1AboutUs1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1AboutUs1.Location = new System.Drawing.Point(0, 0);
             this.userControl1AboutUs1.Name = "userControl1AboutUs1";
-            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 497);
-            this.userControl1AboutUs1.TabIndex = 7;
+            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1AboutUs1.TabIndex = 5;
+            // 
+            // userControl1AboutUs2
+            // 
+            this.userControl1AboutUs2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1AboutUs2.Location = new System.Drawing.Point(0, 0);
+            this.userControl1AboutUs2.Name = "userControl1AboutUs2";
+            this.userControl1AboutUs2.Size = new System.Drawing.Size(877, 500);
+            this.userControl1AboutUs2.TabIndex = 6;
+            // 
+            // myTestControllercs1
+            // 
+            this.myTestControllercs1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.myTestControllercs1.Location = new System.Drawing.Point(0, 0);
+            this.myTestControllercs1.Name = "myTestControllercs1";
+            this.myTestControllercs1.Size = new System.Drawing.Size(877, 500);
+            this.myTestControllercs1.TabIndex = 7;
+            // 
+            // userControl1_Home1
+            // 
+            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Home1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Home1.Name = "userControl1_Home1";
+            this.userControl1_Home1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Home1.TabIndex = 8;
             // 
             // Form1
             // 
@@ -288,12 +342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1142, 558);
-            this.Controls.Add(this.userControl1AboutUs1);
-            this.Controls.Add(this.userControl1_Patients1);
-            this.Controls.Add(this.userControl1_Time1);
-            this.Controls.Add(this.userControl1_Channel1);
-            this.Controls.Add(this.userControl1_Login1);
-            this.Controls.Add(this.userControl1_Home1);
+            this.Controls.Add(this.controllContainerPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -307,6 +356,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.controllContainerPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -327,12 +377,16 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private UserControl1_Home userControl1_Home1;
-        private UserControl1_Login userControl1_Login1;
+        private System.Windows.Forms.Panel controllContainerPanel;
         private UserControl1_Channel userControl1_Channel1;
-        private UserControl1_Time userControl1_Time1;
+        private UserControl1_Login userControl1_Login1;
         private UserControl1_Patients userControl1_Patients1;
+        private UserControl1_Time userControl1_Time1;
+        private UserControl1_Time userControl1_Time2;
         private UserControl1AboutUs userControl1AboutUs1;
+        private UserControl1AboutUs userControl1AboutUs2;
+        private MyTestControllercs myTestControllercs1;
+        private UserControl1_Home userControl1_Home1;
     }
 }
 
