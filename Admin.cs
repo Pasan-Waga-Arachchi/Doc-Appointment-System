@@ -11,10 +11,7 @@ namespace RAD_Project.BasicClasses
         public Admin() { user_Type = "Admin"; }
         private string adminPrivilage = null;
 
-        public void acceptUser(User user) { throw new NotImplementedException(); }   
-        public void rejectUser(User user) { throw new NotImplementedException(); }
-        public void acceptAppoinment(Appoinment appoinment) { throw new NotImplementedException(); }
-        public void rejectAppoinment(Appoinment appoinment) { throw new NotImplementedException(); }
+        
 
     }
 }
