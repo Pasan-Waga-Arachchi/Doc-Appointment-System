@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Basic"
   ],
-  "SelectedNode": "\\BasicClasses",
+  "SelectedNode": "\\Form1.Designer.cs",
   "PreviewInSolutionExplorer": false
 }
