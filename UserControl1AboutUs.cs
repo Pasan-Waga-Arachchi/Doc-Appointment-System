@@ -26,7 +26,7 @@ namespace RAD_Project
         {
             FormController controller = FormController.Instance;
             controller.hideAllUserControllers();
-            Control aboutUsController=controller.getUserControll("userControl1_Home1");
+            Control aboutUsController=controller.getUserControll("userControl1_Test1");
             aboutUsController.Show();
         }
     }

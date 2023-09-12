@@ -46,14 +46,15 @@ namespace RAD_Project
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.controllContainerPanel = new System.Windows.Forms.Panel();
-            this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
-            this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
-            this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
-            this.userControl1_Time2 = new RAD_Project.UserControl1_Time();
-            this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
-            this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
             this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
+            this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
+            this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
+            this.userControl1_Time2 = new RAD_Project.UserControl1_Time();
+            this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
+            this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
+            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
+            this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
+            this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -245,8 +246,9 @@ namespace RAD_Project
             this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
-            // panel4
+            // controllContainerPanel
             // 
+            this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs2);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs1);
@@ -257,57 +259,18 @@ namespace RAD_Project
             this.controllContainerPanel.Controls.Add(this.userControl1_Channel1);
             this.controllContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controllContainerPanel.Location = new System.Drawing.Point(265, 58);
-            this.controllContainerPanel.Name = "panel4";
+            this.controllContainerPanel.Name = "controllContainerPanel";
             this.controllContainerPanel.Size = new System.Drawing.Size(877, 500);
             this.controllContainerPanel.TabIndex = 2;
             // 
-            // userControl1_Channel1
+            // userControl1_Home1
             // 
-            this.userControl1_Channel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Channel1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Channel1.Name = "userControl1_Channel1";
-            this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Channel1.TabIndex = 0;
-            // 
-            // userControl1_Login1
-            // 
-            this.userControl1_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Login1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Login1.Name = "userControl1_Login1";
-            this.userControl1_Login1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Login1.TabIndex = 1;
-            // 
-            // userControl1_Patients1
-            // 
-            this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Patients1.Name = "userControl1_Patients1";
-            this.userControl1_Patients1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Patients1.TabIndex = 2;
-            // 
-            // userControl1_Time1
-            // 
-            this.userControl1_Time1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Time1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Time1.Name = "userControl1_Time1";
-            this.userControl1_Time1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Time1.TabIndex = 3;
-            // 
-            // userControl1_Time2
-            // 
-            this.userControl1_Time2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Time2.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Time2.Name = "userControl1_Time2";
-            this.userControl1_Time2.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Time2.TabIndex = 4;
-            // 
-            // userControl1AboutUs1
-            // 
-            this.userControl1AboutUs1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1AboutUs1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1AboutUs1.Name = "userControl1AboutUs1";
-            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1AboutUs1.TabIndex = 5;
+            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Home1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Home1.Name = "userControl1_Home1";
+            this.userControl1_Home1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Home1.TabIndex = 8;
             // 
             // userControl1AboutUs2
             // 
@@ -317,15 +280,61 @@ namespace RAD_Project
             this.userControl1AboutUs2.Size = new System.Drawing.Size(877, 500);
             this.userControl1AboutUs2.TabIndex = 6;
             // 
-           
-            // userControl1_Home1
+            // userControl1AboutUs1
             // 
-            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControl1_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Home1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Home1.Name = "userControl1_Home1";
-            this.userControl1_Home1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Home1.TabIndex = 8;
+            this.userControl1AboutUs1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1AboutUs1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1AboutUs1.Name = "userControl1AboutUs1";
+            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1AboutUs1.TabIndex = 5;
+            // 
+            // userControl1_Time2
+            // 
+            this.userControl1_Time2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Time2.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Time2.Name = "userControl1_Time2";
+            this.userControl1_Time2.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Time2.TabIndex = 4;
+            // 
+            // userControl1_Time1
+            // 
+            this.userControl1_Time1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Time1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Time1.Name = "userControl1_Time1";
+            this.userControl1_Time1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Time1.TabIndex = 3;
+            // 
+            // userControl1_Patients1
+            // 
+            this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Patients1.Name = "userControl1_Patients1";
+            this.userControl1_Patients1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Patients1.TabIndex = 2;
+            // 
+            // userControl1_Login1
+            // 
+            this.userControl1_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Login1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Login1.Name = "userControl1_Login1";
+            this.userControl1_Login1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Login1.TabIndex = 1;
+            // 
+            // userControl1_Channel1
+            // 
+            this.userControl1_Channel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Channel1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Channel1.Name = "userControl1_Channel1";
+            this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Channel1.TabIndex = 0;
+            // 
+            // userControl1_Test1
+            // 
+            this.userControl1_Test1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Test1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Test1.Name = "userControl1_Test1";
+            this.userControl1_Test1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Test1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -377,6 +386,7 @@ namespace RAD_Project
         private UserControl1AboutUs userControl1AboutUs1;
         private UserControl1AboutUs userControl1AboutUs2;
         private UserControl1_Home userControl1_Home1;
+        private UserControl1_Test userControl1_Test1;
     }
 }
 
