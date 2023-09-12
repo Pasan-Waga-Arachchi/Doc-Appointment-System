@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RAD_Project.BasicClasses
+namespace RAD_Project
 {
     class Payment
     {
-        public string Bill_Id { get; set; }
-        public double Amount { get;set; }
-
-        public string PaymentStatus { get; set; }
+        public int PaymentId { get; set; }
+        public int Amount { get;set; }
         public string PatientId { get; set; }
-        public string PaymentMethod { get; set; }
+        public String PaymentMethod { get; set; }
+        public String PaymentState { get; set; }
         public DateTime PaymentDate { get; set; }
     }
 }

@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RAD_Project.BasicClasses
+namespace RAD_Project
 {
-    class Doctor:User
+    class Doctor : User
     {
-        public Doctor() { UserType = "Doctor"; }
-        public string MedicalLicenceNo { get; set; }
-        public string SpecilizationId { get; set; }
-        public string Qualification { get; set; }
-        public string Hospital { get; set; }
-        public int YearsOfExp{ get; set;}
-        public DateTime Time {  get; set; }
+        public Doctor (){ user_Type = "Doctor"; }
+        public DateTime DateTime { get; set; }
+        public string MedicalLicenseNo { get; set; }
+        public string Specialization { get; set;}
+        public string Qualification{ get; set;}
+        public string Hostpital{ get; set;}
+        public int YearsOfExp { get; set;}
+
     }
 }
