@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RAD_Project.BasicClasses
+namespace RAD_Project
 {
     class Appoinment
     {
-        public int AppoinmentId { get; set; }
-        public string PatientId{ get; set; }
-        public string DoctorId { get; set; }
+        public String AppoinmentId { get; set; }
+        public String DoctorId { get; set; }
+        public String PatientId { get; set; }
+        public String AppoinmentStatus { get; set; }
         public DateTime AppoinmentDate { get; set; }
         public DateTime AppoinmentCreatedDate { get; set; }
-        public string AppoinmentStatus { get; set; }
-
     }
 }
