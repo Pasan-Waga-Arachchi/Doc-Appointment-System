@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RAD_Project.BasicClasses
+namespace RAD_Project
 {
     class Patient: User
     {
