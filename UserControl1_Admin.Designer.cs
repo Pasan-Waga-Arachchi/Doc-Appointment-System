@@ -49,6 +49,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControl1_Admin";
             this.Size = new System.Drawing.Size(658, 410);
+            this.Load += new System.EventHandler(this.UserControl1_Admin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

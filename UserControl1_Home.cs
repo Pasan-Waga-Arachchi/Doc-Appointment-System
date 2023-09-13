@@ -17,9 +17,69 @@ namespace RAD_Project
             InitializeComponent();
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        private void SelectSpecialistBtn_Click(object sender, EventArgs e)
         {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control doctor = controller.getUserControll("userControl1_Channel1");
+            doctor.Show();
             
+        }
+
+        private void TestYourHealthBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control patient = controller.getUserControll("userControl1_Patients1");
+            patient.Show();
+        }
+
+        private void LabReportBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control aboutus = controller.getUserControll("userControl1AboutUs1");
+            aboutus.Show();
+        }
+
+        private void DoctorBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control doctor = controller.getUserControll("userControl1_Channel1");
+            doctor.Show();
+        }
+
+        private void LabBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control patient = controller.getUserControll("userControl1_Patients1");
+            patient.Show();
+        }
+
+        private void MedicineBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control patient = controller.getUserControll("userControl1_Patients1");
+            patient.Show();
+        }
+
+        private void PatientBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control patient = controller.getUserControll("userControl1_Patients1");
+            patient.Show();
+        }
+
+        private void CallUsBtn_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control aboutus = controller.getUserControll("userControl1AboutUs1");
+            aboutus.Show();
         }
     }
 }

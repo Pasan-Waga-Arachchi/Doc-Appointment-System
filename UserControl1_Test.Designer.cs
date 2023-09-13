@@ -40,6 +40,7 @@
             this.label1.Size = new System.Drawing.Size(680, 54);
             this.label1.TabIndex = 0;
             this.label1.Text = "This is to Check FormController";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // UserControl1_Test
             // 
@@ -48,6 +49,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControl1_Test";
             this.Size = new System.Drawing.Size(754, 503);
+            this.Load += new System.EventHandler(this.UserControl1_Test_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1_Home));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.CallUsBtn1 = new System.Windows.Forms.Button();
+            this.PatientBtn1 = new System.Windows.Forms.Button();
+            this.MedicineBtn1 = new System.Windows.Forms.Button();
+            this.LabBtn1 = new System.Windows.Forms.Button();
+            this.DoctorBtn1 = new System.Windows.Forms.Button();
+            this.CallUsBtn = new System.Windows.Forms.Button();
+            this.PatientBtn = new System.Windows.Forms.Button();
+            this.MedicineBtn = new System.Windows.Forms.Button();
+            this.LabBtn = new System.Windows.Forms.Button();
+            this.DoctorBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.SelectSpecialistBtn = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.TestYourHealthBtn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.LabReportBtn = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,131 +66,136 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button10);
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.CallUsBtn1);
+            this.panel1.Controls.Add(this.PatientBtn1);
+            this.panel1.Controls.Add(this.MedicineBtn1);
+            this.panel1.Controls.Add(this.LabBtn1);
+            this.panel1.Controls.Add(this.DoctorBtn1);
+            this.panel1.Controls.Add(this.CallUsBtn);
+            this.panel1.Controls.Add(this.PatientBtn);
+            this.panel1.Controls.Add(this.MedicineBtn);
+            this.panel1.Controls.Add(this.LabBtn);
+            this.panel1.Controls.Add(this.DoctorBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(730, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(126, 496);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // CallUsBtn1
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(12, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 58);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
+            this.CallUsBtn1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CallUsBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CallUsBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CallUsBtn1.Location = new System.Drawing.Point(13, 457);
+            this.CallUsBtn1.Name = "CallUsBtn1";
+            this.CallUsBtn1.Size = new System.Drawing.Size(113, 34);
+            this.CallUsBtn1.TabIndex = 9;
+            this.CallUsBtn1.Text = "Call Us";
+            this.CallUsBtn1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // PatientBtn1
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(12, 106);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 58);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = true;
+            this.PatientBtn1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PatientBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PatientBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientBtn1.Location = new System.Drawing.Point(12, 353);
+            this.PatientBtn1.Name = "PatientBtn1";
+            this.PatientBtn1.Size = new System.Drawing.Size(113, 34);
+            this.PatientBtn1.TabIndex = 8;
+            this.PatientBtn1.Text = "Patients";
+            this.PatientBtn1.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // MedicineBtn1
             // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(12, 205);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(70, 58);
-            this.button3.TabIndex = 2;
-            this.button3.UseVisualStyleBackColor = true;
+            this.MedicineBtn1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MedicineBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MedicineBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MedicineBtn1.Location = new System.Drawing.Point(12, 256);
+            this.MedicineBtn1.Name = "MedicineBtn1";
+            this.MedicineBtn1.Size = new System.Drawing.Size(113, 34);
+            this.MedicineBtn1.TabIndex = 7;
+            this.MedicineBtn1.Text = "Medicine";
+            this.MedicineBtn1.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // LabBtn1
             // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(12, 305);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(70, 58);
-            this.button4.TabIndex = 3;
-            this.button4.UseVisualStyleBackColor = true;
+            this.LabBtn1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LabBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LabBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabBtn1.Location = new System.Drawing.Point(12, 154);
+            this.LabBtn1.Name = "LabBtn1";
+            this.LabBtn1.Size = new System.Drawing.Size(113, 34);
+            this.LabBtn1.TabIndex = 6;
+            this.LabBtn1.Text = "Lab Report";
+            this.LabBtn1.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // DoctorBtn1
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(12, 406);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(70, 58);
-            this.button5.TabIndex = 4;
-            this.button5.UseVisualStyleBackColor = true;
+            this.DoctorBtn1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DoctorBtn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoctorBtn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorBtn1.Location = new System.Drawing.Point(12, 66);
+            this.DoctorBtn1.Name = "DoctorBtn1";
+            this.DoctorBtn1.Size = new System.Drawing.Size(113, 34);
+            this.DoctorBtn1.TabIndex = 5;
+            this.DoctorBtn1.Text = "Doctor";
+            this.DoctorBtn1.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // CallUsBtn
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(12, 66);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 34);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Doctor";
-            this.button6.UseVisualStyleBackColor = false;
+            this.CallUsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CallUsBtn.Image = ((System.Drawing.Image)(resources.GetObject("CallUsBtn.Image")));
+            this.CallUsBtn.Location = new System.Drawing.Point(12, 406);
+            this.CallUsBtn.Name = "CallUsBtn";
+            this.CallUsBtn.Size = new System.Drawing.Size(70, 58);
+            this.CallUsBtn.TabIndex = 4;
+            this.CallUsBtn.UseVisualStyleBackColor = true;
+            this.CallUsBtn.Click += new System.EventHandler(this.CallUsBtn_Click);
             // 
-            // button7
+            // PatientBtn
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(12, 154);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(113, 34);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Lab Report";
-            this.button7.UseVisualStyleBackColor = false;
+            this.PatientBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PatientBtn.Image = ((System.Drawing.Image)(resources.GetObject("PatientBtn.Image")));
+            this.PatientBtn.Location = new System.Drawing.Point(12, 305);
+            this.PatientBtn.Name = "PatientBtn";
+            this.PatientBtn.Size = new System.Drawing.Size(70, 58);
+            this.PatientBtn.TabIndex = 3;
+            this.PatientBtn.UseVisualStyleBackColor = true;
+            this.PatientBtn.Click += new System.EventHandler(this.PatientBtn_Click);
             // 
-            // button8
+            // MedicineBtn
             // 
-            this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(12, 256);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(113, 34);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Medicine";
-            this.button8.UseVisualStyleBackColor = false;
+            this.MedicineBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MedicineBtn.Image = ((System.Drawing.Image)(resources.GetObject("MedicineBtn.Image")));
+            this.MedicineBtn.Location = new System.Drawing.Point(12, 205);
+            this.MedicineBtn.Name = "MedicineBtn";
+            this.MedicineBtn.Size = new System.Drawing.Size(70, 58);
+            this.MedicineBtn.TabIndex = 2;
+            this.MedicineBtn.UseVisualStyleBackColor = true;
+            this.MedicineBtn.Click += new System.EventHandler(this.MedicineBtn_Click);
             // 
-            // button9
+            // LabBtn
             // 
-            this.button9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(12, 353);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(113, 34);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Patients";
-            this.button9.UseVisualStyleBackColor = false;
+            this.LabBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LabBtn.Image = ((System.Drawing.Image)(resources.GetObject("LabBtn.Image")));
+            this.LabBtn.Location = new System.Drawing.Point(12, 106);
+            this.LabBtn.Name = "LabBtn";
+            this.LabBtn.Size = new System.Drawing.Size(70, 58);
+            this.LabBtn.TabIndex = 1;
+            this.LabBtn.UseVisualStyleBackColor = true;
+            this.LabBtn.Click += new System.EventHandler(this.LabBtn_Click);
             // 
-            // button10
+            // DoctorBtn
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(13, 457);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(113, 34);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "Call Us";
-            this.button10.UseVisualStyleBackColor = false;
+            this.DoctorBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoctorBtn.Image = ((System.Drawing.Image)(resources.GetObject("DoctorBtn.Image")));
+            this.DoctorBtn.Location = new System.Drawing.Point(12, 13);
+            this.DoctorBtn.Name = "DoctorBtn";
+            this.DoctorBtn.Size = new System.Drawing.Size(70, 58);
+            this.DoctorBtn.TabIndex = 0;
+            this.DoctorBtn.UseVisualStyleBackColor = true;
+            this.DoctorBtn.Click += new System.EventHandler(this.DoctorBtn_Click);
             // 
             // panel2
             // 
@@ -202,6 +207,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -213,24 +219,55 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button11);
+            this.panel3.Controls.Add(this.SelectSpecialistBtn);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(17, 214);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(187, 267);
             this.panel3.TabIndex = 3;
             // 
+            // SelectSpecialistBtn
+            // 
+            this.SelectSpecialistBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SelectSpecialistBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SelectSpecialistBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SelectSpecialistBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectSpecialistBtn.ForeColor = System.Drawing.Color.White;
+            this.SelectSpecialistBtn.Location = new System.Drawing.Point(0, 182);
+            this.SelectSpecialistBtn.Name = "SelectSpecialistBtn";
+            this.SelectSpecialistBtn.Size = new System.Drawing.Size(187, 68);
+            this.SelectSpecialistBtn.TabIndex = 3;
+            this.SelectSpecialistBtn.Text = "Select Your Specialist";
+            this.SelectSpecialistBtn.UseVisualStyleBackColor = false;
+            this.SelectSpecialistBtn.Click += new System.EventHandler(this.SelectSpecialistBtn_Click);
+            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.button12);
+            this.panel4.Controls.Add(this.TestYourHealthBtn);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(267, 214);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(187, 267);
             this.panel4.TabIndex = 4;
             // 
+            // TestYourHealthBtn
+            // 
+            this.TestYourHealthBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TestYourHealthBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TestYourHealthBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TestYourHealthBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestYourHealthBtn.ForeColor = System.Drawing.Color.White;
+            this.TestYourHealthBtn.Location = new System.Drawing.Point(0, 182);
+            this.TestYourHealthBtn.Name = "TestYourHealthBtn";
+            this.TestYourHealthBtn.Size = new System.Drawing.Size(187, 68);
+            this.TestYourHealthBtn.TabIndex = 4;
+            this.TestYourHealthBtn.Text = "Test Your Health";
+            this.TestYourHealthBtn.UseVisualStyleBackColor = false;
+            this.TestYourHealthBtn.Click += new System.EventHandler(this.TestYourHealthBtn_Click);
+            // 
             // pictureBox2
             // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
@@ -242,15 +279,31 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button13);
+            this.panel5.Controls.Add(this.LabReportBtn);
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Location = new System.Drawing.Point(512, 214);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(187, 267);
             this.panel5.TabIndex = 4;
             // 
+            // LabReportBtn
+            // 
+            this.LabReportBtn.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.LabReportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LabReportBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LabReportBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabReportBtn.ForeColor = System.Drawing.Color.White;
+            this.LabReportBtn.Location = new System.Drawing.Point(0, 182);
+            this.LabReportBtn.Name = "LabReportBtn";
+            this.LabReportBtn.Size = new System.Drawing.Size(187, 68);
+            this.LabReportBtn.TabIndex = 4;
+            this.LabReportBtn.Text = "Get Your Lab Report";
+            this.LabReportBtn.UseVisualStyleBackColor = false;
+            this.LabReportBtn.Click += new System.EventHandler(this.LabReportBtn_Click);
+            // 
             // pictureBox3
             // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
@@ -259,49 +312,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(0, 182);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(187, 68);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "Select Your Specialist";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button12.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(0, 182);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(187, 68);
-            this.button12.TabIndex = 4;
-            this.button12.Text = "Test Your Health";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(0, 182);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(187, 68);
-            this.button13.TabIndex = 4;
-            this.button13.Text = "Get Your Lab Report";
-            this.button13.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -376,26 +386,26 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button DoctorBtn;
+        private System.Windows.Forms.Button LabBtn;
+        private System.Windows.Forms.Button CallUsBtn;
+        private System.Windows.Forms.Button PatientBtn;
+        private System.Windows.Forms.Button MedicineBtn;
+        private System.Windows.Forms.Button DoctorBtn1;
+        private System.Windows.Forms.Button CallUsBtn1;
+        private System.Windows.Forms.Button PatientBtn1;
+        private System.Windows.Forms.Button MedicineBtn1;
+        private System.Windows.Forms.Button LabBtn1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button SelectSpecialistBtn;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button TestYourHealthBtn;
+        private System.Windows.Forms.Button LabReportBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

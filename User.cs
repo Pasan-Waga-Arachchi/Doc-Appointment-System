@@ -14,7 +14,7 @@ namespace RAD_Project
         protected string user_Type;
 
 
-        public int Staff_Id {
+        public int StaffId {
             get { return user_Id; }
             set {user_Id = value;} 
         }
@@ -28,7 +28,7 @@ namespace RAD_Project
             get { return user_Phone; }
             set {user_Phone = (string)value;}
         }
-        public string User_Type
+        public string UserType
         {
             get { return user_Type; }
         }
