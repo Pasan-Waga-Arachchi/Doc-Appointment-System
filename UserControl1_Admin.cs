@@ -16,5 +16,10 @@ namespace RAD_Project
         {
             InitializeComponent();
         }
+
+        private void UserControl1_Admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

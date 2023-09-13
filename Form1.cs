@@ -46,85 +46,85 @@ namespace RAD_Project
 
         private void button1_MouseEnter(object sender, EventArgs e)
         {
-            button1.BackColor = Color.Red;
-            button1.ForeColor = Color.White;
+            ExitButton.BackColor = Color.Red;
+            ExitButton.ForeColor = Color.White;
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
         {
-            button1.BackColor = Color.White;
-            button1.ForeColor = Color.Black;
+            ExitButton.BackColor = Color.White;
+            ExitButton.ForeColor = Color.Black;
         }
 
         private void button2_MouseEnter(object sender, EventArgs e)
         {
-            button2.BackColor = Color.White;
-            button2.ForeColor = Color.Black;
+            HomeButton.BackColor = Color.White;
+            HomeButton.ForeColor = Color.Black;
         }
 
         private void button2_MouseLeave(object sender, EventArgs e)
         {
-            button2.BackColor= Color.Black;
-            button2.ForeColor= Color.Red;
+            HomeButton.BackColor= Color.Black;
+            HomeButton.ForeColor= Color.Red;
         }
 
         private void button3_MouseEnter(object sender, EventArgs e)
         {
-            button3.BackColor = Color.White;
-            button3.ForeColor = Color.Black;
+            LoginButton.BackColor = Color.White;
+            LoginButton.ForeColor = Color.Black;
         }
 
         private void button3_MouseLeave(object sender, EventArgs e)
         {
-            button3.BackColor = Color.Black;
-            button3.ForeColor = Color.Red;
+            LoginButton.BackColor = Color.Black;
+            LoginButton.ForeColor = Color.Red;
         }
 
         private void button4_MouseEnter(object sender, EventArgs e)
         {
-            button4.BackColor = Color.White;
-            button4.ForeColor = Color.Black;
+            ChannelButton.BackColor = Color.White;
+            ChannelButton.ForeColor = Color.Black;
         }
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
-            button4.BackColor = Color.Black;
-            button4.ForeColor = Color.Red;
+            ChannelButton.BackColor = Color.Black;
+            ChannelButton.ForeColor = Color.Red;
         }
         private void button5_MouseEnter(object sender, EventArgs e)
         {
-            button5.BackColor = Color.White;
-            button5.ForeColor = Color.Black;
+            TimeButton.BackColor = Color.White;
+            TimeButton.ForeColor = Color.Black;
         }
 
         private void button5_MouseLeave(object sender, EventArgs e)
         {
-            button5.BackColor= Color.Black;
-            button5.ForeColor= Color.Red;
+            TimeButton.BackColor= Color.Black;
+            TimeButton.ForeColor= Color.Red;
         }
 
         private void button6_MouseEnter(object sender, EventArgs e)
         {
-            button6.BackColor= Color.White;
-            button6.ForeColor= Color.Black;
+            PatientButton.BackColor= Color.White;
+            PatientButton.ForeColor= Color.Black;
         }
 
         private void button6_MouseLeave(object sender, EventArgs e)
         {
-            button6.BackColor= Color.Black;
-            button6.ForeColor= Color.Red;
+            PatientButton.BackColor= Color.Black;
+            PatientButton.ForeColor= Color.Red;
         }
 
         private void button7_MouseEnter(object sender, EventArgs e)
         {
-            button7.BackColor = Color.White;
-            button7.ForeColor= Color.Black;
+            AboutUsButton.BackColor = Color.White;
+            AboutUsButton.ForeColor= Color.Black;
         }
 
         private void button7_MouseLeave(object sender, EventArgs e)
         {
-            button7.BackColor= Color.Black;
-            button7.ForeColor= Color.Red;
+            AboutUsButton.BackColor= Color.Black;
+            AboutUsButton.ForeColor= Color.Red;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -200,6 +200,28 @@ namespace RAD_Project
         public ControlCollection ControllSet
         {
             get { return (ControlCollection)this.controllContainerPanel.Controls; }
+        }
+
+        private void AdminButton_MouseEnter(object sender, EventArgs e)
+        {
+            AdminButton.BackColor = Color.White;
+            AdminButton.ForeColor = Color.Black;
+        }
+
+        private void AdminButton_MouseLeave(object sender, EventArgs e)
+        {
+            AdminButton.BackColor= Color.Black;
+            AdminButton.ForeColor= Color.Red;
+        }
+
+        private void AdminBtn_Click(object sender, EventArgs e)
+        {
+            FormController formController = FormController.Instance;
+            formController.hideAllUserControllers();
+            Control AdminUserControl = formController.getUserControll("UserControl1_Admin");
+            userControl1_Admin1.Show();
+            /*Control AdminUsController = formController.getUserControll("UserControl1_Admin");
+            AdminUsController.Show();*/
         }
     }
 }

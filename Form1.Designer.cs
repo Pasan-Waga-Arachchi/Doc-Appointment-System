@@ -35,18 +35,19 @@ namespace RAD_Project
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.AdminButton = new System.Windows.Forms.Button();
+            this.AboutUsButton = new System.Windows.Forms.Button();
+            this.PatientButton = new System.Windows.Forms.Button();
+            this.TimeButton = new System.Windows.Forms.Button();
+            this.ChannelButton = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
+            this.HomeButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.controllContainerPanel = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
             this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
             this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
             this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
@@ -56,7 +57,6 @@ namespace RAD_Project
             this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
             this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,103 +104,117 @@ namespace RAD_Project
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.AdminButton);
+            this.panel3.Controls.Add(this.AboutUsButton);
+            this.panel3.Controls.Add(this.PatientButton);
+            this.panel3.Controls.Add(this.TimeButton);
+            this.panel3.Controls.Add(this.ChannelButton);
+            this.panel3.Controls.Add(this.LoginButton);
+            this.panel3.Controls.Add(this.HomeButton);
             this.panel3.Font = new System.Drawing.Font("Javanese Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.ForeColor = System.Drawing.Color.Red;
             this.panel3.Location = new System.Drawing.Point(16, 18);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 373);
+            this.panel3.Size = new System.Drawing.Size(230, 372);
             this.panel3.TabIndex = 0;
             // 
-            // button7
+            // AdminButton
             // 
-            this.button7.BackColor = System.Drawing.Color.Black;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.Location = new System.Drawing.Point(0, 260);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(230, 55);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "About Us";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            this.button7.MouseEnter += new System.EventHandler(this.button7_MouseEnter);
-            this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
+            this.AdminButton.BackColor = System.Drawing.Color.Black;
+            this.AdminButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AdminButton.Location = new System.Drawing.Point(0, 315);
+            this.AdminButton.Name = "AdminButton";
+            this.AdminButton.Size = new System.Drawing.Size(230, 55);
+            this.AdminButton.TabIndex = 6;
+            this.AdminButton.Text = "Admin";
+            this.AdminButton.UseVisualStyleBackColor = false;
+            this.AdminButton.Click += new System.EventHandler(this.AdminBtn_Click);
+            this.AdminButton.MouseEnter += new System.EventHandler(this.AdminButton_MouseEnter);
+            this.AdminButton.MouseLeave += new System.EventHandler(this.AdminButton_MouseLeave);
             // 
-            // button6
+            // AboutUsButton
             // 
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Location = new System.Drawing.Point(0, 208);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(230, 52);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Patients";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            this.button6.MouseEnter += new System.EventHandler(this.button6_MouseEnter);
-            this.button6.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
+            this.AboutUsButton.BackColor = System.Drawing.Color.Black;
+            this.AboutUsButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.AboutUsButton.Location = new System.Drawing.Point(0, 260);
+            this.AboutUsButton.Name = "AboutUsButton";
+            this.AboutUsButton.Size = new System.Drawing.Size(230, 55);
+            this.AboutUsButton.TabIndex = 5;
+            this.AboutUsButton.Text = "About Us";
+            this.AboutUsButton.UseVisualStyleBackColor = false;
+            this.AboutUsButton.Click += new System.EventHandler(this.button7_Click);
+            this.AboutUsButton.MouseEnter += new System.EventHandler(this.button7_MouseEnter);
+            this.AboutUsButton.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
             // 
-            // button5
+            // PatientButton
             // 
-            this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.Location = new System.Drawing.Point(0, 156);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(230, 52);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Time Schedule";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
-            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.PatientButton.BackColor = System.Drawing.Color.Black;
+            this.PatientButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PatientButton.Location = new System.Drawing.Point(0, 208);
+            this.PatientButton.Name = "PatientButton";
+            this.PatientButton.Size = new System.Drawing.Size(230, 52);
+            this.PatientButton.TabIndex = 4;
+            this.PatientButton.Text = "Patients";
+            this.PatientButton.UseVisualStyleBackColor = false;
+            this.PatientButton.Click += new System.EventHandler(this.button6_Click);
+            this.PatientButton.MouseEnter += new System.EventHandler(this.button6_MouseEnter);
+            this.PatientButton.MouseLeave += new System.EventHandler(this.button6_MouseLeave);
             // 
-            // button4
+            // TimeButton
             // 
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Location = new System.Drawing.Point(0, 104);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(230, 52);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Channel Your Doctor";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.TimeButton.BackColor = System.Drawing.Color.Black;
+            this.TimeButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TimeButton.Location = new System.Drawing.Point(0, 156);
+            this.TimeButton.Name = "TimeButton";
+            this.TimeButton.Size = new System.Drawing.Size(230, 52);
+            this.TimeButton.TabIndex = 3;
+            this.TimeButton.Text = "Time Schedule";
+            this.TimeButton.UseVisualStyleBackColor = false;
+            this.TimeButton.Click += new System.EventHandler(this.button5_Click);
+            this.TimeButton.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
+            this.TimeButton.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             // 
-            // button3
+            // ChannelButton
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Location = new System.Drawing.Point(0, 52);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 52);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Login";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
-            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.ChannelButton.BackColor = System.Drawing.Color.Black;
+            this.ChannelButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ChannelButton.Location = new System.Drawing.Point(0, 104);
+            this.ChannelButton.Name = "ChannelButton";
+            this.ChannelButton.Size = new System.Drawing.Size(230, 52);
+            this.ChannelButton.TabIndex = 2;
+            this.ChannelButton.Text = "Channel Your Doctor";
+            this.ChannelButton.UseVisualStyleBackColor = false;
+            this.ChannelButton.Click += new System.EventHandler(this.button4_Click);
+            this.ChannelButton.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
+            this.ChannelButton.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             // 
-            // button2
+            // LoginButton
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 52);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Home";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.LoginButton.BackColor = System.Drawing.Color.Black;
+            this.LoginButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LoginButton.Location = new System.Drawing.Point(0, 52);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(230, 52);
+            this.LoginButton.TabIndex = 1;
+            this.LoginButton.Text = "Login";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.button3_Click);
+            this.LoginButton.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
+            this.LoginButton.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            // 
+            // HomeButton
+            // 
+            this.HomeButton.BackColor = System.Drawing.Color.Black;
+            this.HomeButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HomeButton.Location = new System.Drawing.Point(0, 0);
+            this.HomeButton.Name = "HomeButton";
+            this.HomeButton.Size = new System.Drawing.Size(230, 52);
+            this.HomeButton.TabIndex = 0;
+            this.HomeButton.Text = "Home";
+            this.HomeButton.UseVisualStyleBackColor = false;
+            this.HomeButton.Click += new System.EventHandler(this.button2_Click);
+            this.HomeButton.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
+            this.HomeButton.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
             // 
             // pictureBox1
             // 
@@ -216,7 +230,7 @@ namespace RAD_Project
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.ExitButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(265, 0);
             this.panel2.Name = "panel2";
@@ -235,19 +249,19 @@ namespace RAD_Project
             this.label1.TabIndex = 2;
             this.label1.Text = "Date Time";
             // 
-            // button1
+            // ExitButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(804, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(62, 43);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.ExitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ExitButton.Location = new System.Drawing.Point(804, 8);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(62, 43);
+            this.ExitButton.TabIndex = 0;
+            this.ExitButton.Text = "X";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.button1_Click);
+            this.ExitButton.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.ExitButton.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
             // controllContainerPanel
             // 
@@ -267,16 +281,14 @@ namespace RAD_Project
             this.controllContainerPanel.Size = new System.Drawing.Size(877, 500);
             this.controllContainerPanel.TabIndex = 2;
             // 
-            // button8
+            // userControl1_Admin1
             // 
-            this.button8.BackColor = System.Drawing.Color.Black;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button8.Location = new System.Drawing.Point(0, 315);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(230, 55);
-            this.button8.TabIndex = 6;
-            this.button8.Text = "Admin";
-            this.button8.UseVisualStyleBackColor = false;
+            this.userControl1_Admin1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Admin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Admin1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Admin1.Name = "userControl1_Admin1";
+            this.userControl1_Admin1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Admin1.TabIndex = 10;
             // 
             // userControl1_Test1
             // 
@@ -351,15 +363,6 @@ namespace RAD_Project
             this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Channel1.TabIndex = 0;
             // 
-            // userControl1_Admin1
-            // 
-            this.userControl1_Admin1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControl1_Admin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Admin1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Admin1.Name = "userControl1_Admin1";
-            this.userControl1_Admin1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Admin1.TabIndex = 10;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -389,15 +392,15 @@ namespace RAD_Project
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AboutUsButton;
+        private System.Windows.Forms.Button PatientButton;
+        private System.Windows.Forms.Button TimeButton;
+        private System.Windows.Forms.Button ChannelButton;
+        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.Button HomeButton;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -411,7 +414,7 @@ namespace RAD_Project
         private UserControl1AboutUs userControl1AboutUs2;
         private UserControl1_Home userControl1_Home1;
         private UserControl1_Test userControl1_Test1;
-        private Button button8;
+        private Button AdminButton;
         private UserControl1_Admin userControl1_Admin1;
     }
 }
