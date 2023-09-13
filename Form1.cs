@@ -178,28 +178,21 @@ namespace RAD_Project
 
         private void button6_Click(object sender, EventArgs e)
         {
-            userControl1_Patients1.Show();
-            userControl1_Patients1.BringToFront();
-
-            userControl1_Time1.Hide();
-            userControl1_Home1.Hide();
-            userControl1_Login1.Hide();
-            userControl1_Channel1.Hide();
-            //userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
+            FormController formController = FormController.Instance;
+            formController.hideAllUserControllers();
+            Control patientController = formController.getUserControll("userControl1_Patients1");
+            patientController.Show();
 
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            userControl1AboutUs1.Show();
-            userControl1AboutUs1.BringToFront();
+            FormController formController = FormController.Instance;
+            formController.hideAllUserControllers();
+            Control aboutUsController = formController.getUserControll("userControl1AboutUs1");
+            aboutUsController.Show();
 
-            userControl1_Home1.Hide();
-            userControl1_Login1.Hide();
-            userControl1_Channel1.Hide();
-            userControl1_Patients1.Hide();
-            userControl1_Time1.Hide();
+
         }
        public Panel ControllContainerPanel { 
             get { return this.controllContainerPanel; } 
