@@ -24,7 +24,7 @@ namespace RAD_Project
             return dBconnection;
         }
         public SqlConnection SqlConnection { get { return sqlConnection; } }
-        public string ConnectionString { set { connectionString = value; } }
+        public static string ConnectionString { set { connectionString = value; } }
 
 
     }

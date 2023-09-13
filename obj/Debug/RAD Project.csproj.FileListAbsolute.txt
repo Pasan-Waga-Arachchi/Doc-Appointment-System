@@ -50,3 +50,22 @@ D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Par
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Part_05\Doc-Appointment-System\obj\Debug\RAD Project.exe
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Part_05\Doc-Appointment-System\obj\Debug\RAD Project.pdb
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Part_05\Doc-Appointment-System\obj\Debug\RAD_Project.UserControl1_Test.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\bin\Debug\RAD Project.exe.config
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\bin\Debug\RAD Project.exe
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\bin\Debug\RAD Project.pdb
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.csproj.AssemblyReference.cache
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.csproj.SuggestedBindingRedirects.cache
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.Form1.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.Properties.Resources.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1AboutUs.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Channel.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Home.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Login.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Patients.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Test.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Time.resources
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.csproj.GenerateResource.cache
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.csproj.CoreCompileInputs.cache
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.exe
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.pdb
+D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Admin.resources

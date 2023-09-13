@@ -46,6 +46,8 @@ namespace RAD_Project
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.controllContainerPanel = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
             this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
             this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
             this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
@@ -54,7 +56,7 @@ namespace RAD_Project
             this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
             this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
+            this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -102,6 +104,7 @@ namespace RAD_Project
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button5);
@@ -112,7 +115,7 @@ namespace RAD_Project
             this.panel3.ForeColor = System.Drawing.Color.Red;
             this.panel3.Location = new System.Drawing.Point(16, 18);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(230, 313);
+            this.panel3.Size = new System.Drawing.Size(230, 373);
             this.panel3.TabIndex = 0;
             // 
             // button7
@@ -121,7 +124,7 @@ namespace RAD_Project
             this.button7.Dock = System.Windows.Forms.DockStyle.Top;
             this.button7.Location = new System.Drawing.Point(0, 260);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(230, 50);
+            this.button7.Size = new System.Drawing.Size(230, 55);
             this.button7.TabIndex = 5;
             this.button7.Text = "About Us";
             this.button7.UseVisualStyleBackColor = false;
@@ -248,6 +251,7 @@ namespace RAD_Project
             // 
             // controllContainerPanel
             // 
+            this.controllContainerPanel.Controls.Add(this.userControl1_Admin1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs2);
@@ -262,6 +266,25 @@ namespace RAD_Project
             this.controllContainerPanel.Name = "controllContainerPanel";
             this.controllContainerPanel.Size = new System.Drawing.Size(877, 500);
             this.controllContainerPanel.TabIndex = 2;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Black;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button8.Location = new System.Drawing.Point(0, 315);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(230, 55);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "Admin";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // userControl1_Test1
+            // 
+            this.userControl1_Test1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Test1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Test1.Name = "userControl1_Test1";
+            this.userControl1_Test1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Test1.TabIndex = 9;
             // 
             // userControl1_Home1
             // 
@@ -328,13 +351,14 @@ namespace RAD_Project
             this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Channel1.TabIndex = 0;
             // 
-            // userControl1_Test1
+            // userControl1_Admin1
             // 
-            this.userControl1_Test1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Test1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Test1.Name = "userControl1_Test1";
-            this.userControl1_Test1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Test1.TabIndex = 9;
+            this.userControl1_Admin1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Admin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Admin1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Admin1.Name = "userControl1_Admin1";
+            this.userControl1_Admin1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Admin1.TabIndex = 10;
             // 
             // Form1
             // 
@@ -387,6 +411,8 @@ namespace RAD_Project
         private UserControl1AboutUs userControl1AboutUs2;
         private UserControl1_Home userControl1_Home1;
         private UserControl1_Test userControl1_Test1;
+        private Button button8;
+        private UserControl1_Admin userControl1_Admin1;
     }
 }
 
