@@ -92,11 +92,17 @@
     <Compile Include="UserControl1_Patients.Designer.cs">
       <DependentUpon>UserControl1_Patients.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1_Test.cs">
+    <Compile Include="UserControl1_PInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl1_Test.Designer.cs">
-      <DependentUpon>UserControl1_Test.cs</DependentUpon>
+    <Compile Include="UserControl1_PInfo.Designer.cs">
+      <DependentUpon>UserControl1_PInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1_PReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1_PReg.Designer.cs">
+      <DependentUpon>UserControl1_PReg.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1_Time.cs">
       <SubType>UserControl</SubType>
@@ -131,8 +137,11 @@
     <EmbeddedResource Include="UserControl1_Patients.resx">
       <DependentUpon>UserControl1_Patients.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1_Test.resx">
-      <DependentUpon>UserControl1_Test.cs</DependentUpon>
+    <EmbeddedResource Include="UserControl1_PInfo.resx">
+      <DependentUpon>UserControl1_PInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1_PReg.resx">
+      <DependentUpon>UserControl1_PReg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Time.resx">
       <DependentUpon>UserControl1_Time.cs</DependentUpon>

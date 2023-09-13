@@ -54,7 +54,8 @@ namespace RAD_Project
             this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
             this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
+            this.UserControl1_PReg1 = new RAD_Project.UserControl1_PReg();
+            this.UserControl1_PInfo1 = new RAD_Project.UserControl1_PInfo();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -248,7 +249,8 @@ namespace RAD_Project
             // 
             // controllContainerPanel
             // 
-            this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
+            this.controllContainerPanel.Controls.Add(this.UserControl1_PInfo1);
+            this.controllContainerPanel.Controls.Add(this.UserControl1_PReg1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs2);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs1);
@@ -328,14 +330,22 @@ namespace RAD_Project
             this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Channel1.TabIndex = 0;
             // 
-            // userControl1_Test1
+            // userControl1_PReg1
             // 
-            this.userControl1_Test1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Test1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Test1.Name = "userControl1_Test1";
-            this.userControl1_Test1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Test1.TabIndex = 9;
+            this.UserControl1_PReg1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserControl1_PReg1.Location = new System.Drawing.Point(0, 0);
+            this.UserControl1_PReg1.Name = "UserControl1_PReg1";
+            this.UserControl1_PReg1.Size = new System.Drawing.Size(877, 500);
+            this.UserControl1_PReg1.TabIndex = 9;
             // 
+            // userControl_PInfo1
+            //
+            this.UserControl1_PInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserControl1_PInfo1.Location = new System.Drawing.Point(0, 0);
+            this.UserControl1_PInfo1.Name = "UserControl1_PInfo1";
+            this.UserControl1_PInfo1.Size = new System.Drawing.Size(877, 500);
+            this.UserControl1_PInfo1.TabIndex = 9;
+            //
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -386,7 +396,8 @@ namespace RAD_Project
         private UserControl1AboutUs userControl1AboutUs1;
         private UserControl1AboutUs userControl1AboutUs2;
         private UserControl1_Home userControl1_Home1;
-        private UserControl1_Test userControl1_Test1;
+        private UserControl1_PReg UserControl1_PReg1;
+        private UserControl1_PInfo UserControl1_PInfo1;
     }
 }
 

@@ -50,3 +50,21 @@ D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Par
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Part_05\Doc-Appointment-System\obj\Debug\RAD Project.exe
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Part_05\Doc-Appointment-System\obj\Debug\RAD Project.pdb
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_My_Part_05\Doc-Appointment-System\obj\Debug\RAD_Project.UserControl1_Test.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\bin\Debug\RAD Project.exe.config
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\bin\Debug\RAD Project.exe
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\bin\Debug\RAD Project.pdb
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD Project.csproj.AssemblyReference.cache
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.Form1.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.Properties.Resources.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1AboutUs.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_Channel.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_Home.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_Login.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_Patients.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_Time.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD Project.csproj.GenerateResource.cache
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD Project.csproj.CoreCompileInputs.cache
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD Project.exe
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD Project.pdb
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_PReg.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\New folder (2)\obj\Debug\RAD_Project.UserControl1_PInfo.resources

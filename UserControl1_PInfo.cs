@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RAD_Project
 {
-    public partial class UserControl1_Test : UserControl
+    public partial class UserControl1_PInfo : UserControl
     {
-        public UserControl1_Test()
+        public UserControl1_PInfo()
         {
             InitializeComponent();
         }
