@@ -16,5 +16,21 @@ namespace RAD_Project
         {
             InitializeComponent();
         }
+
+        private void PReg_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control patientregController = controller.getUserControll("UserControl1_PReg1");
+            patientregController.Show();
+        }
+
+        private void PInfo_Click(object sender, EventArgs e)
+        {
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control patientregController = controller.getUserControll("UserControl1_PInfo1");
+            patientregController.Show();
+        }
     }
 }

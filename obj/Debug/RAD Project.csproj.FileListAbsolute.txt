@@ -69,3 +69,23 @@ D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.csproj.CoreC
 D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.exe
 D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD Project.pdb
 D:\2 nd Year 2023 lms\Project RAD\Booking_SYS\obj\Debug\RAD_Project.UserControl1_Admin.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\bin\Debug\RAD Project.exe.config
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\bin\Debug\RAD Project.exe
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\bin\Debug\RAD Project.pdb
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD Project.csproj.AssemblyReference.cache
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.Form1.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.Properties.Resources.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1AboutUs.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Admin.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Channel.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Home.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Login.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Patients.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Test.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_Time.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD Project.csproj.GenerateResource.cache
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD Project.csproj.CoreCompileInputs.cache
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD Project.exe
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD Project.pdb
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_PInfo.resources
+P:\CS\Level 2\Level 2 sem 2\Rapid\new project\obj\Debug\RAD_Project.UserControl1_PReg.resources
