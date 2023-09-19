@@ -47,9 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="Admin_login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin_login.Designer.cs">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Appoinment.cs" />
     <Compile Include="DBconnection.cs" />
     <Compile Include="Doctor.cs" />
+    <Compile Include="DoctorLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DoctorLogin.Designer.cs">
+      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,7 +69,29 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="FormController.cs" />
+    <Compile Include="LOGINDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOGINDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LOGINDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LOGINDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Patient.cs" />
+    <Compile Include="patRegistrstion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patRegistrstion.Designer.cs">
+      <DependentUpon>patRegistrstion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pat_login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pat_login.Designer.cs">
+      <DependentUpon>pat_login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Payment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,8 +144,20 @@
     <Compile Include="UserControl1_Time.Designer.cs">
       <DependentUpon>UserControl1_Time.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin_login.resx">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorLogin.resx">
+      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patRegistrstion.resx">
+      <DependentUpon>patRegistrstion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pat_login.resx">
+      <DependentUpon>pat_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +192,28 @@
     <EmbeddedResource Include="UserControl1_Time.resx">
       <DependentUpon>UserControl1_Time.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LOGINDataSet.xsc">
+      <DependentUpon>LOGINDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LOGINDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LOGINDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LOGINDataSet.xss">
+      <DependentUpon>LOGINDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LOGINDataSet1.xsc">
+      <DependentUpon>LOGINDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LOGINDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LOGINDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LOGINDataSet1.xss">
+      <DependentUpon>LOGINDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
