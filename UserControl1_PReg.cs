@@ -82,7 +82,7 @@ namespace RAD_Project
 
             String sql = "";
 
-            sql = "Insert into Patient values('" + pid + "','" + name + "','" + address + "','" + age + "','" + gender + "','" + contact + "','" + blood + "','" + emergency + "','" + food + "','" + drug + "','" + plaster + "')";
+            sql = "Insert into Patient values('" + pid + "','" + name + "','" + address + "','" + gender + "','" + contact + "','" + blood + "','" + emergency + "','" + food + "','" + drug + "','" + plaster + "' ,'"+ age + "')";
             command = new SqlCommand(sql, cnn);
             command.ExecuteNonQuery();
             MessageBox.Show("Data inserted");
