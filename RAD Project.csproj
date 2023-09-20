@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Admin.cs" />
     <Compile Include="Appoinment.cs" />
-    <Compile Include="DBconnection.cs" />
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
