@@ -35,7 +35,6 @@ namespace RAD_Project
             String name = txtName.Text;
             String address = txtAddress.Text;
             String gender = "";
-            String dob = Convert.ToDateTime(txtDOB.Text).ToString("dd-MM-yyyy");
             String food = "";
             String drug = "";
             String plaster = "";
@@ -84,7 +83,7 @@ namespace RAD_Project
 
             String sql = "";
 
-            sql = "Insert into Patient values('" + pid + "','" + name + "','" + address + "','" + dob + "','" + age + "','" + gender + "','" + contact + "','" + blood + "','" + emergency + "','" + food + "','" + drug + "','" + plaster + "')";
+            sql = "Insert into Patient values('" + pid + "','" + name + "','" + address + "','" + age + "','" + gender + "','" + contact + "','" + blood + "','" + emergency + "','" + food + "','" + drug + "','" + plaster + "')";
             command = new SqlCommand(sql, cnn);
             command.ExecuteNonQuery();
             MessageBox.Show("Data inserted");

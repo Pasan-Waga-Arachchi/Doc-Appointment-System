@@ -34,6 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PReg = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -55,18 +56,18 @@
             this.PInfo.BackColor = System.Drawing.SystemColors.Desktop;
             this.PInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PInfo.ForeColor = System.Drawing.Color.White;
-            this.PInfo.Location = new System.Drawing.Point(432, 248);
+            this.PInfo.Location = new System.Drawing.Point(456, 288);
             this.PInfo.Name = "PInfo";
             this.PInfo.Size = new System.Drawing.Size(248, 88);
             this.PInfo.TabIndex = 14;
-            this.PInfo.Text = "Patient Infomation";
+            this.PInfo.Text = "Patient Information";
             this.PInfo.UseVisualStyleBackColor = false;
             this.PInfo.Click += new System.EventHandler(this.PInfo_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(432, 96);
+            this.pictureBox1.Location = new System.Drawing.Point(456, 136);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 240);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -78,7 +79,7 @@
             this.PReg.BackColor = System.Drawing.SystemColors.Desktop;
             this.PReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PReg.ForeColor = System.Drawing.Color.White;
-            this.PReg.Location = new System.Drawing.Point(136, 248);
+            this.PReg.Location = new System.Drawing.Point(160, 288);
             this.PReg.Name = "PReg";
             this.PReg.Size = new System.Drawing.Size(248, 88);
             this.PReg.TabIndex = 13;
@@ -90,18 +91,31 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(136, 96);
+            this.pictureBox2.Location = new System.Drawing.Point(160, 136);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(248, 232);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(256, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(385, 92);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Patient Information \r\nManagement";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserControl1_Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.PInfo);
             this.Controls.Add(this.pictureBox1);
@@ -113,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -123,5 +138,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button PReg;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

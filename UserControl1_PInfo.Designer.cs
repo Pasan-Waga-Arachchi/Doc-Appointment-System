@@ -49,7 +49,6 @@
             this.txtEmergency = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtBlood = new System.Windows.Forms.TextBox();
-            this.txtDOB = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPID = new System.Windows.Forms.TextBox();
@@ -58,7 +57,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -177,7 +175,6 @@
             this.panel1.Controls.Add(this.txtEmergency);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.txtBlood);
-            this.panel1.Controls.Add(this.txtDOB);
             this.panel1.Controls.Add(this.txtAge);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.txtPID);
@@ -186,7 +183,6 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -216,35 +212,38 @@
             // checkBoxPlaster
             // 
             this.checkBoxPlaster.AutoSize = true;
+            this.checkBoxPlaster.BackColor = System.Drawing.SystemColors.Control;
             this.checkBoxPlaster.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxPlaster.Location = new System.Drawing.Point(616, 104);
             this.checkBoxPlaster.Name = "checkBoxPlaster";
             this.checkBoxPlaster.Size = new System.Drawing.Size(159, 29);
             this.checkBoxPlaster.TabIndex = 79;
             this.checkBoxPlaster.Text = "Plaster Allergy";
-            this.checkBoxPlaster.UseVisualStyleBackColor = true;
+            this.checkBoxPlaster.UseVisualStyleBackColor = false;
             // 
             // checkBoxDrug
             // 
             this.checkBoxDrug.AutoSize = true;
+            this.checkBoxDrug.BackColor = System.Drawing.SystemColors.Control;
             this.checkBoxDrug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxDrug.Location = new System.Drawing.Point(616, 72);
             this.checkBoxDrug.Name = "checkBoxDrug";
             this.checkBoxDrug.Size = new System.Drawing.Size(141, 29);
             this.checkBoxDrug.TabIndex = 78;
             this.checkBoxDrug.Text = "Drug Allergy";
-            this.checkBoxDrug.UseVisualStyleBackColor = true;
+            this.checkBoxDrug.UseVisualStyleBackColor = false;
             // 
             // checkBoxFood
             // 
             this.checkBoxFood.AutoSize = true;
+            this.checkBoxFood.BackColor = System.Drawing.SystemColors.Control;
             this.checkBoxFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxFood.Location = new System.Drawing.Point(616, 40);
             this.checkBoxFood.Name = "checkBoxFood";
             this.checkBoxFood.Size = new System.Drawing.Size(144, 29);
             this.checkBoxFood.TabIndex = 77;
             this.checkBoxFood.Text = "Food Allergy";
-            this.checkBoxFood.UseVisualStyleBackColor = true;
+            this.checkBoxFood.UseVisualStyleBackColor = false;
             // 
             // radioFemale
             // 
@@ -272,15 +271,15 @@
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(616, 8);
+            this.txtContact.Location = new System.Drawing.Point(160, 176);
             this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(176, 22);
+            this.txtContact.Size = new System.Drawing.Size(184, 22);
             this.txtContact.TabIndex = 74;
             this.txtContact.TextChanged += new System.EventHandler(this.TxtContact_TextChanged);
             // 
             // txtEmergency
             // 
-            this.txtEmergency.Location = new System.Drawing.Point(616, 184);
+            this.txtEmergency.Location = new System.Drawing.Point(616, 8);
             this.txtEmergency.Name = "txtEmergency";
             this.txtEmergency.Size = new System.Drawing.Size(176, 22);
             this.txtEmergency.TabIndex = 73;
@@ -298,13 +297,6 @@
             this.txtBlood.Name = "txtBlood";
             this.txtBlood.Size = new System.Drawing.Size(176, 22);
             this.txtBlood.TabIndex = 71;
-            // 
-            // txtDOB
-            // 
-            this.txtDOB.Location = new System.Drawing.Point(160, 168);
-            this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(184, 22);
-            this.txtDOB.TabIndex = 70;
             // 
             // txtAge
             // 
@@ -332,7 +324,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(408, 184);
+            this.label11.Location = new System.Drawing.Point(408, 8);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(184, 25);
             this.label11.TabIndex = 66;
@@ -362,7 +354,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(408, 8);
+            this.label8.Location = new System.Drawing.Point(16, 168);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 25);
             this.label8.TabIndex = 63;
@@ -377,16 +369,6 @@
             this.label7.Size = new System.Drawing.Size(85, 25);
             this.label7.TabIndex = 62;
             this.label7.Text = "Address";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 168);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 25);
-            this.label6.TabIndex = 61;
-            this.label6.Text = "Date Of Birth";
             // 
             // label5
             // 
@@ -470,7 +452,6 @@
         private System.Windows.Forms.TextBox txtEmergency;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtBlood;
-        private System.Windows.Forms.TextBox txtDOB;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPID;
@@ -479,7 +460,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

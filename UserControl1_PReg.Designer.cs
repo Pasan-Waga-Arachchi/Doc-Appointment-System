@@ -41,7 +41,6 @@
             this.txtEmergency = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtBlood = new System.Windows.Forms.TextBox();
-            this.txtDOB = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPID = new System.Windows.Forms.TextBox();
@@ -50,7 +49,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -156,14 +154,14 @@
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(624, 88);
+            this.txtContact.Location = new System.Drawing.Point(168, 312);
             this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(176, 22);
+            this.txtContact.Size = new System.Drawing.Size(184, 22);
             this.txtContact.TabIndex = 48;
             // 
             // txtEmergency
             // 
-            this.txtEmergency.Location = new System.Drawing.Point(624, 312);
+            this.txtEmergency.Location = new System.Drawing.Point(624, 88);
             this.txtEmergency.Name = "txtEmergency";
             this.txtEmergency.Size = new System.Drawing.Size(176, 22);
             this.txtEmergency.TabIndex = 47;
@@ -181,13 +179,6 @@
             this.txtBlood.Name = "txtBlood";
             this.txtBlood.Size = new System.Drawing.Size(176, 22);
             this.txtBlood.TabIndex = 45;
-            // 
-            // txtDOB
-            // 
-            this.txtDOB.Location = new System.Drawing.Point(168, 312);
-            this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(184, 22);
-            this.txtDOB.TabIndex = 44;
             // 
             // txtAge
             // 
@@ -214,7 +205,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(424, 312);
+            this.label11.Location = new System.Drawing.Point(424, 88);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(184, 25);
             this.label11.TabIndex = 40;
@@ -245,7 +236,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(424, 88);
+            this.label8.Location = new System.Drawing.Point(24, 312);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 25);
             this.label8.TabIndex = 37;
@@ -260,16 +251,6 @@
             this.label7.Size = new System.Drawing.Size(85, 25);
             this.label7.TabIndex = 36;
             this.label7.Text = "Address";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 312);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 25);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Date Of Birth";
             // 
             // label5
             // 
@@ -331,6 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.checkBoxPlaster);
             this.Controls.Add(this.checkBoxDrug);
@@ -344,7 +326,6 @@
             this.Controls.Add(this.txtEmergency);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtBlood);
-            this.Controls.Add(this.txtDOB);
             this.Controls.Add(this.txtAge);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtPID);
@@ -353,7 +334,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -380,7 +360,6 @@
         private System.Windows.Forms.TextBox txtEmergency;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtBlood;
-        private System.Windows.Forms.TextBox txtDOB;
         private System.Windows.Forms.TextBox txtAge;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPID;
@@ -389,7 +368,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
