@@ -58,7 +58,9 @@ namespace RAD_Project
             this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
             this.admin_login1 = new RAD_Project.Admin_login();
+            this.userControl1_PReg1 = new RAD_Project.UserControl1_PReg();
             this.admin_login2 = new RAD_Project.Admin_login();
+            this.userControl1_PInfo1 = new RAD_Project.UserControl1_PInfo();
             this.doctorLogin1 = new RAD_Project.DoctorLogin();
             this.pat_login1 = new RAD_Project.pat_login();
             this.patRegistrstion1 = new RAD_Project.patRegistrstion();
@@ -285,6 +287,8 @@ namespace RAD_Project
             this.controllContainerPanel.Controls.Add(this.userControl1_Patients1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Login1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Channel1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_PReg1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_PInfo1);
             this.controllContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controllContainerPanel.Location = new System.Drawing.Point(265, 58);
             this.controllContainerPanel.Name = "controllContainerPanel";
@@ -351,6 +355,7 @@ namespace RAD_Project
             // 
             // userControl1_Patients1
             // 
+            this.userControl1_Patients1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Patients1.BackgroundImage")));
             this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_Patients1.Name = "userControl1_Patients1";
@@ -376,8 +381,11 @@ namespace RAD_Project
             this.userControl1_Channel1.TabIndex = 0;
             // 
             // admin_login1
+            // userControl1_PReg1
+            // 
             // 
             this.admin_login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_login1.BackgroundImage")));
+            this.userControl1_PReg1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_PReg1.BackgroundImage")));
             this.admin_login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.admin_login1.Location = new System.Drawing.Point(0, 58);
             this.admin_login1.Name = "admin_login1";
@@ -423,6 +431,23 @@ namespace RAD_Project
             this.patRegistrstion1.Name = "patRegistrstion1";
             this.patRegistrstion1.Size = new System.Drawing.Size(877, 500);
             this.patRegistrstion1.TabIndex = 14;
+            // 
+            // Form1
+            this.userControl1_PReg1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_PReg1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_PReg1.Name = "userControl1_PReg1";
+            this.userControl1_PReg1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_PReg1.TabIndex = 9;
+            // 
+            // userControl1_PInfo1
+            // 
+            this.userControl1_PInfo1.BackColor = System.Drawing.Color.Transparent;
+            this.userControl1_PInfo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_PInfo1.BackgroundImage")));
+            this.userControl1_PInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_PInfo1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_PInfo1.Name = "userControl1_PInfo1";
+            this.userControl1_PInfo1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_PInfo1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -482,6 +507,8 @@ namespace RAD_Project
         private pat_login pat_login1;
         private DoctorLogin doctorLogin1;
         private Admin_login admin_login2;
+        private UserControl1_PReg userControl1_PReg1;
+        private UserControl1_PInfo userControl1_PInfo1;
     }
 }
 

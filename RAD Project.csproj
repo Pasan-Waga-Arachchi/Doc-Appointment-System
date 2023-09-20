@@ -132,6 +132,18 @@
     <Compile Include="UserControl1_Patients.Designer.cs">
       <DependentUpon>UserControl1_Patients.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl1_PInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1_PInfo.Designer.cs">
+      <DependentUpon>UserControl1_PInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1_PReg.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1_PReg.Designer.cs">
+      <DependentUpon>UserControl1_PReg.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1_Test.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,6 +179,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControl1AboutUs.resx">
       <DependentUpon>UserControl1AboutUs.cs</DependentUpon>
@@ -185,6 +198,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Patients.resx">
       <DependentUpon>UserControl1_Patients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1_PInfo.resx">
+      <DependentUpon>UserControl1_PInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1_PReg.resx">
+      <DependentUpon>UserControl1_PReg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Test.resx">
       <DependentUpon>UserControl1_Test.cs</DependentUpon>
@@ -226,6 +245,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_day.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
