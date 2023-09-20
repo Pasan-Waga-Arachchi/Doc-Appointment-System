@@ -17,7 +17,7 @@ namespace RAD_Project
         private DatabaseConnection()
         {
 
-            //connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Doctor_Appointment_System_New;Integrated Security=True";
+            connectionString = @"Data Source=DESKTOP-782J25A\SQLEXPRESS;Initial Catalog=Doctor_Appointment_System;Integrated Security=True";
             connection = new SqlConnection(connectionString);
         }
 
