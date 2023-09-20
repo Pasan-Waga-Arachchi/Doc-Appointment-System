@@ -114,3 +114,28 @@ D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_Kushan
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_Kushani\Doc-Appointment-System\obj\Debug\RAD Project.csproj.CoreCompileInputs.cache
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_Kushani\Doc-Appointment-System\obj\Debug\RAD Project.exe
 D:\URCS\Level02\Semester02\Rapid Application Development(CSC2213)\Project_Kushani\Doc-Appointment-System\obj\Debug\RAD Project.pdb
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\bin\Debug\RAD Project.exe.config
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\bin\Debug\RAD Project.exe
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\bin\Debug\RAD Project.pdb
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD Project.csproj.AssemblyReference.cache
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.Admin_login.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.DoctorLogin.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.Form1.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.patRegistrstion.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.pat_login.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.Properties.Resources.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1AboutUs.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Admin.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Channel.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Home.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Login.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Patients.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_PInfo.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_PReg.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Test.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD_Project.UserControl1_Time.resources
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD Project.csproj.GenerateResource.cache
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD Project.csproj.CoreCompileInputs.cache
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD Project.exe
+C:\Users\LAHIRU-PC\Desktop\ProjectFinal_V02\obj\Debug\RAD Project.pdb

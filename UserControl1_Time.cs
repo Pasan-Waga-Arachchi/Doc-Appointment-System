@@ -49,7 +49,7 @@ namespace RAD_Project
         {
             SqlConnection connection = DatabaseConnection.Instance.GetConnection();
 
-            string special = SpecialcomboBox.SelectedValue.ToString();
+            string special = SpecialcomboBox.SelectedValue as string;
             try
             {
                 string query = "SELECT Name,Time,Hospital FROM Doctor WHERE Specialization ='" + special + "'";
