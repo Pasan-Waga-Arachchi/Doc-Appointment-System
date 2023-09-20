@@ -17,14 +17,13 @@ namespace RAD_Project
         {
             InitializeComponent();
         }
+
         //SQL Connection
         private SqlConnection connectDB()
         {
             string connectionString;
             SqlConnection cnn;
-            // connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
             cnn = DatabaseConnection.Instance.GetConnection();
-            //MessageBox.Show("Connected");
             return cnn;
         }
 

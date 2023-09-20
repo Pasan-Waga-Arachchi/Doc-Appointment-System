@@ -30,7 +30,6 @@ namespace RAD_Project
         {
             string connectionString;
             SqlConnection cnn;
-           // connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
             cnn =DatabaseConnection.Instance.GetConnection();
             return cnn;
 
@@ -132,12 +131,10 @@ namespace RAD_Project
             SqlCommand command = new SqlCommand();
             command.Connection = cnn;
 
-            // Use a parameterized query with a WHERE clause to update the specific patient
             string sql = "UPDATE Patient SET Name=@Name, Address=@Address, Age=@Age, Gender=@Gender, Mobile_Number=@MobileNumber, Blood_Group=@BloodGroup, Emergency_Contact_No=@EmergencyContact, Food_Allergies=@FoodAllergies, Drug_Allergies=@DrugAllergies, Plaster_Allergies=@PlasterAllergies WHERE Patient_ID=@PatientID";
 
             command.CommandText = sql;
 
-            // Add parameters with their values
             command.Parameters.AddWithValue("@PatientID", pid);
             command.Parameters.AddWithValue("@Name", name);
             command.Parameters.AddWithValue("@Address", address);
@@ -157,6 +154,7 @@ namespace RAD_Project
                 if (rowsAffected > 0)
                 {
                     MessageBox.Show("Data Updated");
+                    populate();
                 }
                 else
                 {
