@@ -28,9 +28,9 @@ namespace RAD_Project
         {
             string connectionString;
             SqlConnection cnn;
-            connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
-            cnn = new SqlConnection(connectionString);
-            cnn.Open();
+           // connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
+            cnn =DatabaseConnection.Instance.GetConnection();
+           
             //MessageBox.Show("Connected");
             return cnn;
 
@@ -38,15 +38,15 @@ namespace RAD_Project
         }
         void populate()
         {
-            using (SqlConnection cnn = connectDB())
-            {
+            //using (SqlConnection cnn = connectDB())
+                SqlConnection cnn = connectDB();
                 String query = "select * from Patient";
                 SqlDataAdapter da = new SqlDataAdapter(query, cnn);
                 SqlCommandBuilder builder = new SqlCommandBuilder(da);
                 var ds = new DataSet();
                 da.Fill(ds);
                 dataGridView1.DataSource = ds.Tables[0];
-            }
+            
         }
 
         public static void EmptyTextBoxes(Control parent)
@@ -63,33 +63,7 @@ namespace RAD_Project
         int key = 0;
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtPID.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            txtName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            txtAddress.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            txtDOB.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            txtAge.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            string gender = "";
-            if (radioFemale.Checked)
-            {
-                gender = radioFemale.Text;
-            }
-            else
-            {
-                gender=radioMale.Text;
-            }
-
-            gender = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-            txtContact.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-            txtBlood.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-            txtEmergency.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-            checkBoxFood.Text= dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
-            checkBoxDrug.Text = dataGridView1.SelectedRows[0].Cells[11].Value.ToString();
-            checkBoxPlaster.Text = dataGridView1.SelectedRows[0].Cells[12].Value.ToString();
-
             
-
-
-
 
         }
 
@@ -147,7 +121,69 @@ namespace RAD_Project
 
         private void BtnIUpdate_Click(object sender, EventArgs e)
         {
+            String pid = txtPID.Text;
+            String name = txtName.Text;
+            String address = txtAddress.Text;
+            String gender = "";
+            String dob = Convert.ToDateTime(txtDOB.Text).ToString("dd-MM-yyyy");
+            String food = "";
+            String drug = "";
+            String plaster = "";
+            int age = Convert.ToInt32(txtAge.Text);
+            Int64 contact = Convert.ToInt64(txtContact.Text);
+            String blood = txtBlood.Text;
+            Int64 emergency = Convert.ToInt64(txtEmergency.Text);
 
+
+            if (radioMale.Checked)
+            {
+                gender = "Male";
+            }
+            else
+            {
+                gender = "Female";
+            }
+
+            if (checkBoxFood.Checked)
+            {
+                food = "Yes";
+            }
+            else
+            {
+                food = "No";
+            }
+
+            if (checkBoxDrug.Checked)
+            {
+                drug = "Yes";
+            }
+            else
+            {
+                drug = "No";
+            }
+
+            if (checkBoxPlaster.Checked)
+            {
+                plaster = "Yes";
+            }
+            else
+            {
+                plaster = "No";
+            }
+
+
+            SqlConnection cnn;
+            cnn = connectDB();
+            SqlCommand command;
+
+            String sql = "";
+
+            sql = "update Patient set Patient_ID='{0}',Name='{1}',Address='{2}',DateOFBirth='{3}',Age='{4}',Gender='{5}',Mobile_Number='{6}',Blood_Group ='{7}',Emergency_Contact_No='{8}',Food_Allergies='{9}',Drug_Allergies='{10}',Plaster_Allergies='{11}'";
+            command = new SqlCommand(sql, cnn);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Data Updated");
+            cnn.Close();
+           
         }
 
         private void BtnIDelete_Click(object sender, EventArgs e)
@@ -155,15 +191,17 @@ namespace RAD_Project
             
             if (txtPID.Text != "")
             {
-                int pid = Convert.ToInt32(txtPID.Text);
-                using (SqlConnection cnn = connectDB())
-                {
-                    String sql = "delete Patient where Patient_ID=" + pid + "";
-                    cnn.Open();
+                String pid = txtPID.Text;
+                SqlConnection cnn = connectDB();
+                
+                    String sql = "delete Patient where Patient_ID= '" + pid + "'";
+                    
                     SqlCommand command;
                     command = new SqlCommand(sql, cnn);
                     command.ExecuteNonQuery();
-                } // The using block ensures that the connection is properly closed and disposed.
+                    cnn.Close();
+                    populate();
+
                 MessageBox.Show("Record Deleted Successfully!");
             }
             else
@@ -184,7 +222,7 @@ namespace RAD_Project
                 SqlCommand command;
                 String sql = "";
 
-                sql = "select * from Patient where Patient_ID= " + pid + "";
+                sql = "select * from Patient where Patient_ID= '" + pid + "'";
                 command = new SqlCommand(sql, cnn);
                 SqlDataAdapter da = new SqlDataAdapter(command);
                 DataSet ds = new DataSet();
@@ -219,6 +257,38 @@ namespace RAD_Project
                 cnn.Close();
 
             }
+        }
+
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                txtPID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                txtName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString(); 
+                txtAddress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                txtDOB.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                txtAge.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                string gender = "";
+                if (radioFemale.Checked)
+                {
+                    gender = radioFemale.Text;
+                }
+                else
+                {
+                    gender = radioMale.Text;
+                }
+
+                gender = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                txtContact.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                txtBlood.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                txtEmergency.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                checkBoxFood.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+                checkBoxDrug.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
+                checkBoxPlaster.Text = dataGridView1.SelectedRows[0].Cells[11].Value.ToString();
+            }
+            
+           
+            
         }
     }
 }

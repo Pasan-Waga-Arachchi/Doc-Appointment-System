@@ -22,9 +22,8 @@ namespace RAD_Project
         {
             string connectionString;
             SqlConnection cnn;
-            connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
-            cnn = new SqlConnection(connectionString);
-            cnn.Open();
+            // connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
+            cnn = DatabaseConnection.Instance.GetConnection();
             //MessageBox.Show("Connected");
             return cnn;
         }
@@ -32,7 +31,7 @@ namespace RAD_Project
         //Add button 
         private void RegAdd_Click(object sender, EventArgs e)
         {
-            int pid = Convert.ToInt32(txtPID.Text);
+            String pid = txtPID.Text;
             String name = txtName.Text;
             String address = txtAddress.Text;
             String gender = "";

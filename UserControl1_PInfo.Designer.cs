@@ -91,8 +91,10 @@
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(816, 192);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // label1
@@ -123,9 +125,9 @@
             this.btnIUpdate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnIUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIUpdate.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnIUpdate.Location = new System.Drawing.Point(504, 224);
+            this.btnIUpdate.Location = new System.Drawing.Point(496, 224);
             this.btnIUpdate.Name = "btnIUpdate";
-            this.btnIUpdate.Size = new System.Drawing.Size(96, 40);
+            this.btnIUpdate.Size = new System.Drawing.Size(104, 40);
             this.btnIUpdate.TabIndex = 3;
             this.btnIUpdate.Text = "Update";
             this.btnIUpdate.UseVisualStyleBackColor = false;

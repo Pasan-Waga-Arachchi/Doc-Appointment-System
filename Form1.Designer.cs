@@ -49,8 +49,6 @@ namespace RAD_Project
             this.controllContainerPanel = new System.Windows.Forms.Panel();
             this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
             this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
-            this.userControl1_PReg1 = new RAD_Project.UserControl1_PReg();
-            this.userControl1_PInfo1 = new RAD_Project.UserControl1_PInfo();
             this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
             this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
             this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
@@ -59,13 +57,14 @@ namespace RAD_Project
             this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
             this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
+            this.userControl1_PReg1 = new RAD_Project.UserControl1_PReg();
+            this.userControl1_PInfo1 = new RAD_Project.UserControl1_PInfo();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.controllContainerPanel.SuspendLayout();
             this.SuspendLayout();
-           
             // 
             // panel1
             // 
@@ -278,13 +277,13 @@ namespace RAD_Project
             this.controllContainerPanel.Controls.Add(this.userControl1_Patients1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Login1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Channel1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_PReg1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_PInfo1);
             this.controllContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controllContainerPanel.Location = new System.Drawing.Point(265, 58);
             this.controllContainerPanel.Name = "controllContainerPanel";
             this.controllContainerPanel.Size = new System.Drawing.Size(877, 500);
             this.controllContainerPanel.TabIndex = 2;
-            this.controllContainerPanel.Controls.Add(this.userControl1_PReg1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_PInfo1);
             // 
             // userControl1_Admin1
             // 
@@ -346,6 +345,7 @@ namespace RAD_Project
             // 
             // userControl1_Patients1
             // 
+            this.userControl1_Patients1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Patients1.BackgroundImage")));
             this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_Patients1.Name = "userControl1_Patients1";
@@ -368,18 +368,19 @@ namespace RAD_Project
             this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Channel1.TabIndex = 0;
             // 
-            // 
             // userControl1_PReg1
             // 
+            this.userControl1_PReg1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_PReg1.BackgroundImage")));
             this.userControl1_PReg1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1_PReg1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_PReg1.Name = "userControl1_PReg1";
             this.userControl1_PReg1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_PReg1.TabIndex = 9;
             // 
-            // 
             // userControl1_PInfo1
             // 
+            this.userControl1_PInfo1.BackColor = System.Drawing.Color.Transparent;
+            this.userControl1_PInfo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_PInfo1.BackgroundImage")));
             this.userControl1_PInfo1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1_PInfo1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_PInfo1.Name = "userControl1_PInfo1";
