@@ -16,7 +16,6 @@ namespace RAD_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DBconnection.ConnectionString = "";
             Form1 form = new Form1();
             FormController.Form = form;
             Application.Run(form);
