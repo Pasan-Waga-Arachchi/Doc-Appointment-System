@@ -14,6 +14,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
 using System.Collections;
 using TextBox = System.Windows.Forms.TextBox;
+using System.Data.SqlTypes;
+using System.Security.Cryptography;
 
 namespace RAD_Project
 {
@@ -30,15 +32,12 @@ namespace RAD_Project
             SqlConnection cnn;
            // connectionString = @"Data Source=IMASHINETHMINI;Initial Catalog=Patient;Integrated Security=True";
             cnn =DatabaseConnection.Instance.GetConnection();
-           
-            //MessageBox.Show("Connected");
             return cnn;
 
             
         }
         void populate()
         {
-            //using (SqlConnection cnn = connectDB())
                 SqlConnection cnn = connectDB();
                 String query = "select * from Patient";
                 SqlDataAdapter da = new SqlDataAdapter(query, cnn);
@@ -60,7 +59,6 @@ namespace RAD_Project
             }
         }
 
-        int key = 0;
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -71,8 +69,7 @@ namespace RAD_Project
         {
             txtPID.Text = "";
             txtName.Text = "";
-            txtEmergency.Text = "";
-            txtDOB.Text = "";
+            txtEmergency.Text = "";          
             txtContact.Text = "";
             txtBlood.Text = "";
             txtAge.Text = "";
@@ -117,73 +114,63 @@ namespace RAD_Project
             populate();
         }
 
-        
-
         private void BtnIUpdate_Click(object sender, EventArgs e)
         {
-            String pid = txtPID.Text;
-            String name = txtName.Text;
-            String address = txtAddress.Text;
-            String gender = "";
-            String dob = Convert.ToDateTime(txtDOB.Text).ToString("dd-MM-yyyy");
-            String food = "";
-            String drug = "";
-            String plaster = "";
+            string pid = txtPID.Text;
+            string name = txtName.Text;
+            string address = txtAddress.Text;
+            string gender = radioMale.Checked ? "Male" : "Female";
+            string food = checkBoxFood.Checked ? "Yes" : "No";
+            string drug = checkBoxDrug.Checked ? "Yes" : "No";
+            string plaster = checkBoxPlaster.Checked ? "Yes" : "No";
             int age = Convert.ToInt32(txtAge.Text);
-            Int64 contact = Convert.ToInt64(txtContact.Text);
-            String blood = txtBlood.Text;
-            Int64 emergency = Convert.ToInt64(txtEmergency.Text);
+            long contact = Convert.ToInt64(txtContact.Text);
+            string blood = txtBlood.Text;
+            long emergency = Convert.ToInt64(txtEmergency.Text);
 
+            SqlConnection cnn = connectDB();
+            SqlCommand command = new SqlCommand();
+            command.Connection = cnn;
 
-            if (radioMale.Checked)
+            // Use a parameterized query with a WHERE clause to update the specific patient
+            string sql = "UPDATE Patient SET Name=@Name, Address=@Address, Age=@Age, Gender=@Gender, Mobile_Number=@MobileNumber, Blood_Group=@BloodGroup, Emergency_Contact_No=@EmergencyContact, Food_Allergies=@FoodAllergies, Drug_Allergies=@DrugAllergies, Plaster_Allergies=@PlasterAllergies WHERE Patient_ID=@PatientID";
+
+            command.CommandText = sql;
+
+            // Add parameters with their values
+            command.Parameters.AddWithValue("@PatientID", pid);
+            command.Parameters.AddWithValue("@Name", name);
+            command.Parameters.AddWithValue("@Address", address);
+            command.Parameters.AddWithValue("@Age", age);
+            command.Parameters.AddWithValue("@Gender", gender);
+            command.Parameters.AddWithValue("@MobileNumber", contact);
+            command.Parameters.AddWithValue("@BloodGroup", blood);
+            command.Parameters.AddWithValue("@EmergencyContact", emergency);
+            command.Parameters.AddWithValue("@FoodAllergies", food);
+            command.Parameters.AddWithValue("@DrugAllergies", drug);
+            command.Parameters.AddWithValue("@PlasterAllergies", plaster);
+
+            try
             {
-                gender = "Male";
+               
+                int rowsAffected = command.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    MessageBox.Show("Data Updated");
+                }
+                else
+                {
+                    MessageBox.Show("No matching patient found with the given ID.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                gender = "Female";
+                MessageBox.Show("Error: " + ex.Message);
             }
-
-            if (checkBoxFood.Checked)
+            finally
             {
-                food = "Yes";
+                cnn.Close();
             }
-            else
-            {
-                food = "No";
-            }
-
-            if (checkBoxDrug.Checked)
-            {
-                drug = "Yes";
-            }
-            else
-            {
-                drug = "No";
-            }
-
-            if (checkBoxPlaster.Checked)
-            {
-                plaster = "Yes";
-            }
-            else
-            {
-                plaster = "No";
-            }
-
-
-            SqlConnection cnn;
-            cnn = connectDB();
-            SqlCommand command;
-
-            String sql = "";
-
-            sql = "update Patient set Patient_ID='{0}',Name='{1}',Address='{2}',DateOFBirth='{3}',Age='{4}',Gender='{5}',Mobile_Number='{6}',Blood_Group ='{7}',Emergency_Contact_No='{8}',Food_Allergies='{9}',Drug_Allergies='{10}',Plaster_Allergies='{11}'";
-            command = new SqlCommand(sql, cnn);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Data Updated");
-            cnn.Close();
-           
         }
 
         private void BtnIDelete_Click(object sender, EventArgs e)
@@ -246,7 +233,7 @@ namespace RAD_Project
                 SqlCommand command;
                 String sql = "";
 
-                sql = "select * from Patient where Mobile_Number= " + contact + "";
+                sql = "select * from Patient where Mobile_Number= '" + contact + "'";
                 command = new SqlCommand(sql, cnn);
                 SqlDataAdapter da = new SqlDataAdapter(command);
                 DataSet ds = new DataSet();
@@ -266,8 +253,7 @@ namespace RAD_Project
                 txtPID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 txtName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString(); 
                 txtAddress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                txtDOB.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                txtAge.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                txtAge.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
                 string gender = "";
                 if (radioFemale.Checked)
                 {
@@ -278,13 +264,13 @@ namespace RAD_Project
                     gender = radioMale.Text;
                 }
 
-                gender = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                txtContact.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                txtBlood.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-                txtEmergency.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-                checkBoxFood.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-                checkBoxDrug.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
-                checkBoxPlaster.Text = dataGridView1.SelectedRows[0].Cells[11].Value.ToString();
+                gender = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                txtContact.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                txtBlood.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                txtEmergency.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                checkBoxFood.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                checkBoxDrug.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+                checkBoxPlaster.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
             }
             
            
