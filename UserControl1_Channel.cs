@@ -83,6 +83,7 @@ namespace RAD_Project
             try
             {
                 string query = "SELECT doctorname,special,time,date FROM Doctor WHERE special = '"+state+"' AND date= '"+date+"' AND time= '"+time+"'";
+                //string query = "SELECT Doctors.Name,Doctors.Time,Doctors.Hospital FROM Doctors INNER JOIN Specialization ON Doctors.Specialization_ID = Specialization.Specialization_ID WHERE Specialization.Specialization = '"+state+"' AND Doctors.DoctorID NOT IN(SELECT Appointment.DoctorID FROM Appointment WHERE Appointment.Appointment_Date = '"+date+"' AND Appointment.Appointment_Time = '"+time+"')";
                 {
                     try
                     {
@@ -134,7 +135,7 @@ namespace RAD_Project
 
                 try
                 {
-                    string query = "INSERT INTO Appointment (appointmentID, patientName, patientID, doctorname,appointmentDate, appointmentTime, reason,appoinmentType,specialization) " +
+                    string query = "INSERT INTO Appointment (appointmentID, patientName, patientID, doctorName,appointmentDate, appointmentTime, reason,appoinmentType,specialization) " +
                            "VALUES (@AppointmentID,@PatientName,@PatientID,@DoctorName,@AppointmentDate,@AppointmenTime,@Reason,@AppointmentType,@Specialization)";
 
                     SqlCommand cmd = new SqlCommand(query, connection);
