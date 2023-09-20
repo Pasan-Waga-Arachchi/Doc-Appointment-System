@@ -131,14 +131,13 @@ namespace RAD_Project
             SqlCommand command = new SqlCommand();
             command.Connection = cnn;
 
-            string sql = "UPDATE Patient SET Name=@Name, Address=@Address, Age=@Age, Gender=@Gender, Mobile_Number=@MobileNumber, Blood_Group=@BloodGroup, Emergency_Contact_No=@EmergencyContact, Food_Allergies=@FoodAllergies, Drug_Allergies=@DrugAllergies, Plaster_Allergies=@PlasterAllergies WHERE Patient_ID=@PatientID";
+            string sql = "UPDATE Patient SET Name=@Name, Address=@Address, Gender=@Gender, Mobile_Number=@MobileNumber, Blood_Group=@BloodGroup, Emergency_Contact_No=@EmergencyContact, Food_Allergies=@FoodAllergies, Drug_Allergies=@DrugAllergies, Plaster_Allergies=@PlasterAllergies,Age=@Age WHERE Patient_ID=@PatientID";
 
             command.CommandText = sql;
 
             command.Parameters.AddWithValue("@PatientID", pid);
             command.Parameters.AddWithValue("@Name", name);
-            command.Parameters.AddWithValue("@Address", address);
-            command.Parameters.AddWithValue("@Age", age);
+            command.Parameters.AddWithValue("@Address", address);         
             command.Parameters.AddWithValue("@Gender", gender);
             command.Parameters.AddWithValue("@MobileNumber", contact);
             command.Parameters.AddWithValue("@BloodGroup", blood);
@@ -146,6 +145,7 @@ namespace RAD_Project
             command.Parameters.AddWithValue("@FoodAllergies", food);
             command.Parameters.AddWithValue("@DrugAllergies", drug);
             command.Parameters.AddWithValue("@PlasterAllergies", plaster);
+            command.Parameters.AddWithValue("@Age", age);
 
             try
             {
@@ -251,7 +251,7 @@ namespace RAD_Project
                 txtPID.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 txtName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString(); 
                 txtAddress.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                txtAge.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                
                 string gender = "";
                 if (radioFemale.Checked)
                 {
@@ -262,13 +262,14 @@ namespace RAD_Project
                     gender = radioMale.Text;
                 }
 
-                gender = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                txtContact.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                txtBlood.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                txtEmergency.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
-                checkBoxFood.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
-                checkBoxDrug.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-                checkBoxPlaster.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
+                gender = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                txtContact.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                txtBlood.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                txtEmergency.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                checkBoxFood.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                checkBoxDrug.Text = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                checkBoxPlaster.Text = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+                txtAge.Text = dataGridView1.SelectedRows[0].Cells[10].Value.ToString();
             }
             
            
