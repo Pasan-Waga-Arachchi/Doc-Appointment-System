@@ -17,6 +17,7 @@ namespace RAD_Project
         }
         private static Form1 form=null;
         private static FormController instance;
+        public string UserType {  get; set; }
         public static FormController Instance
         {
             get
