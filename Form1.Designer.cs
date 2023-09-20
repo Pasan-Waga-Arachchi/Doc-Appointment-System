@@ -57,6 +57,11 @@ namespace RAD_Project
             this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
             this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
             this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
+            this.admin_login1 = new RAD_Project.Admin_login();
+            this.admin_login2 = new RAD_Project.Admin_login();
+            this.doctorLogin1 = new RAD_Project.DoctorLogin();
+            this.pat_login1 = new RAD_Project.pat_login();
+            this.patRegistrstion1 = new RAD_Project.patRegistrstion();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -229,6 +234,7 @@ namespace RAD_Project
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Controls.Add(this.admin_login1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.ExitButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -265,6 +271,10 @@ namespace RAD_Project
             // 
             // controllContainerPanel
             // 
+            this.controllContainerPanel.Controls.Add(this.patRegistrstion1);
+            this.controllContainerPanel.Controls.Add(this.pat_login1);
+            this.controllContainerPanel.Controls.Add(this.doctorLogin1);
+            this.controllContainerPanel.Controls.Add(this.admin_login2);
             this.controllContainerPanel.Controls.Add(this.userControl1_Admin1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
@@ -349,6 +359,8 @@ namespace RAD_Project
             // 
             // userControl1_Login1
             // 
+            this.userControl1_Login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Login1.BackgroundImage")));
+            this.userControl1_Login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.userControl1_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1_Login1.Location = new System.Drawing.Point(0, 0);
             this.userControl1_Login1.Name = "userControl1_Login1";
@@ -362,6 +374,55 @@ namespace RAD_Project
             this.userControl1_Channel1.Name = "userControl1_Channel1";
             this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Channel1.TabIndex = 0;
+            // 
+            // admin_login1
+            // 
+            this.admin_login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_login1.BackgroundImage")));
+            this.admin_login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.admin_login1.Location = new System.Drawing.Point(0, 58);
+            this.admin_login1.Name = "admin_login1";
+            this.admin_login1.Size = new System.Drawing.Size(792, 409);
+            this.admin_login1.TabIndex = 11;
+            // 
+            // admin_login2
+            // 
+            this.admin_login2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_login2.BackgroundImage")));
+            this.admin_login2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.admin_login2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin_login2.Location = new System.Drawing.Point(0, 0);
+            this.admin_login2.Name = "admin_login2";
+            this.admin_login2.Size = new System.Drawing.Size(877, 500);
+            this.admin_login2.TabIndex = 11;
+            // 
+            // doctorLogin1
+            // 
+            this.doctorLogin1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("doctorLogin1.BackgroundImage")));
+            this.doctorLogin1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.doctorLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctorLogin1.Location = new System.Drawing.Point(0, 0);
+            this.doctorLogin1.Name = "doctorLogin1";
+            this.doctorLogin1.Size = new System.Drawing.Size(877, 500);
+            this.doctorLogin1.TabIndex = 12;
+            // 
+            // pat_login1
+            // 
+            this.pat_login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pat_login1.BackgroundImage")));
+            this.pat_login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pat_login1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pat_login1.Location = new System.Drawing.Point(0, 0);
+            this.pat_login1.Name = "pat_login1";
+            this.pat_login1.Size = new System.Drawing.Size(877, 500);
+            this.pat_login1.TabIndex = 13;
+            // 
+            // patRegistrstion1
+            // 
+            this.patRegistrstion1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("patRegistrstion1.BackgroundImage")));
+            this.patRegistrstion1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.patRegistrstion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patRegistrstion1.Location = new System.Drawing.Point(0, 0);
+            this.patRegistrstion1.Name = "patRegistrstion1";
+            this.patRegistrstion1.Size = new System.Drawing.Size(877, 500);
+            this.patRegistrstion1.TabIndex = 14;
             // 
             // Form1
             // 
@@ -416,6 +477,11 @@ namespace RAD_Project
         private UserControl1_Test userControl1_Test1;
         private Button AdminButton;
         private UserControl1_Admin userControl1_Admin1;
+        private Admin_login admin_login1;
+        private patRegistrstion patRegistrstion1;
+        private pat_login pat_login1;
+        private DoctorLogin doctorLogin1;
+        private Admin_login admin_login2;
     }
 }
 
