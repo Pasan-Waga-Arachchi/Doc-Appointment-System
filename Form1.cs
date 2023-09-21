@@ -28,15 +28,11 @@ namespace RAD_Project
 
             label3.Parent = pictureBox1;
             //label3.BackColor = Color.Transparent;
-
-            userControl1_Home1.Show();
-            userControl1_Home1.BringToFront();
-
-            userControl1_Login1.Hide();
-            userControl1_Channel1.Hide();
-            userControl1_Time1.Hide();  
-            userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
+            FormController controller=FormController.Instance;
+            controller.hideAllUserControllers();
+            Control control = controller.getUserControll("userControl1_Home1");
+            control.Show();
+            control.BringToFront();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -129,51 +125,38 @@ namespace RAD_Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-            userControl1_Home1.Show();
-            userControl1_Home1.BringToFront();
-
-            userControl1_Login1.Hide();
-            userControl1_Channel1.Hide();
-            userControl1_Time1.Hide();
-            userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control control = controller.getUserControll("userControl1_Home1");
+            control.Show();
+            control.BringToFront();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            userControl1_Login1.Show();
-            userControl1_Login1.BringToFront();
-
-            userControl1_Home1.Hide();
-            userControl1_Channel1.Hide();
-            userControl1_Time1.Hide();
-            userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control control = controller.getUserControll("userControl1_Login1");
+            control.Show();
+            control.BringToFront();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            userControl1_Channel1.Show(); 
-            userControl1_Channel1.BringToFront();
-
-            userControl1_Time1.Hide();
-            userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
-            userControl1_Home1.Hide();
-            userControl1_Login1.Hide();
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control control = controller.getUserControll("userControl1_Channel1");
+            control.Show();
+            control.BringToFront();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            userControl1_Time1.Show();
-            userControl1_Time1.BringToFront();
-
-            userControl1_Home1.Hide();
-            userControl1_Login1.Hide();
-            userControl1_Channel1.Hide();
-            //userControl1_Time1.Hide();
-            userControl1_Patients1.Hide();
-            userControl1AboutUs1.Hide();
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control control = controller.getUserControll("userControl1_Time3");
+            control.Show();
+            control.BringToFront();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -216,12 +199,11 @@ namespace RAD_Project
 
         private void AdminBtn_Click(object sender, EventArgs e)
         {
-            FormController formController = FormController.Instance;
-            formController.hideAllUserControllers();
-            Control AdminUserControl = formController.getUserControll("UserControl1_Admin");
-            userControl1_Admin1.Show();
-            /*Control AdminUsController = formController.getUserControll("UserControl1_Admin");
-            AdminUsController.Show();*/
+            FormController controller = FormController.Instance;
+            controller.hideAllUserControllers();
+            Control control = controller.getUserControll("userControl1_Admin1");
+            control.Show();
+            control.BringToFront();
         }
     }
 }

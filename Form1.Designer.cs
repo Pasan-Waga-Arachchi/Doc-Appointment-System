@@ -47,23 +47,22 @@ namespace RAD_Project
             this.label1 = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
             this.controllContainerPanel = new System.Windows.Forms.Panel();
-            this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
-            this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
-            this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
-            this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
-            this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
+            this.admin_login1 = new RAD_Project.Admin_login();
             this.userControl1_Time2 = new RAD_Project.UserControl1_Time();
             this.userControl1_Time1 = new RAD_Project.UserControl1_Time();
-            this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
-            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
-            this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
-            this.admin_login1 = new RAD_Project.Admin_login();
-            this.userControl1_PReg1 = new RAD_Project.UserControl1_PReg();
             this.admin_login2 = new RAD_Project.Admin_login();
-            this.userControl1_PInfo1 = new RAD_Project.UserControl1_PInfo();
             this.doctorLogin1 = new RAD_Project.DoctorLogin();
             this.pat_login1 = new RAD_Project.pat_login();
             this.patRegistrstion1 = new RAD_Project.patRegistrstion();
+            this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
+            this.userControl1_Channel1 = new RAD_Project.UserControl1_Channel();
+            this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
+            this.userControl1_Login1 = new RAD_Project.UserControl1_Login();
+            this.userControl1_Patients1 = new RAD_Project.UserControl1_Patients();
+            this.userControl1_PInfo1 = new RAD_Project.UserControl1_PInfo();
+            this.userControl1_PReg1 = new RAD_Project.UserControl1_PReg();
+            this.userControl1_Time3 = new RAD_Project.UserControl1_Time();
+            this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -273,69 +272,34 @@ namespace RAD_Project
             // 
             // controllContainerPanel
             // 
+            this.controllContainerPanel.Controls.Add(this.userControl1AboutUs1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Time3);
+            this.controllContainerPanel.Controls.Add(this.userControl1_PReg1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_PInfo1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Patients1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Login1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Channel1);
+            this.controllContainerPanel.Controls.Add(this.userControl1_Admin1);
             this.controllContainerPanel.Controls.Add(this.patRegistrstion1);
             this.controllContainerPanel.Controls.Add(this.pat_login1);
             this.controllContainerPanel.Controls.Add(this.doctorLogin1);
             this.controllContainerPanel.Controls.Add(this.admin_login2);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Admin1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
-            this.controllContainerPanel.Controls.Add(this.userControl1AboutUs2);
-            this.controllContainerPanel.Controls.Add(this.userControl1AboutUs1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Time2);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Time1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Patients1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Login1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Channel1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_PReg1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_PInfo1);
             this.controllContainerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controllContainerPanel.Location = new System.Drawing.Point(265, 58);
             this.controllContainerPanel.Name = "controllContainerPanel";
             this.controllContainerPanel.Size = new System.Drawing.Size(877, 500);
             this.controllContainerPanel.TabIndex = 2;
             // 
-            // userControl1_Admin1
+            // admin_login1
             // 
-            this.userControl1_Admin1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControl1_Admin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Admin1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Admin1.Name = "userControl1_Admin1";
-            this.userControl1_Admin1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Admin1.TabIndex = 10;
-            // 
-            // userControl1_Test1
-            // 
-            this.userControl1_Test1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Test1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Test1.Name = "userControl1_Test1";
-            this.userControl1_Test1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Test1.TabIndex = 9;
-            // 
-            // userControl1_Home1
-            // 
-            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.userControl1_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Home1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Home1.Name = "userControl1_Home1";
-            this.userControl1_Home1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Home1.TabIndex = 8;
-            // 
-            // userControl1AboutUs2
-            // 
-            this.userControl1AboutUs2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1AboutUs2.Location = new System.Drawing.Point(0, 0);
-            this.userControl1AboutUs2.Name = "userControl1AboutUs2";
-            this.userControl1AboutUs2.Size = new System.Drawing.Size(877, 500);
-            this.userControl1AboutUs2.TabIndex = 6;
-            // 
-            // userControl1AboutUs1
-            // 
-            this.userControl1AboutUs1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1AboutUs1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1AboutUs1.Name = "userControl1AboutUs1";
-            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1AboutUs1.TabIndex = 5;
+            this.admin_login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_login1.BackgroundImage")));
+            this.admin_login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.admin_login1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.admin_login1.Location = new System.Drawing.Point(0, 58);
+            this.admin_login1.Name = "admin_login1";
+            this.admin_login1.Size = new System.Drawing.Size(792, 409);
+            this.admin_login1.TabIndex = 11;
             // 
             // userControl1_Time2
             // 
@@ -353,54 +317,16 @@ namespace RAD_Project
             this.userControl1_Time1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Time1.TabIndex = 3;
             // 
-            // userControl1_Patients1
-            // 
-            this.userControl1_Patients1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Patients1.BackgroundImage")));
-            this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Patients1.Name = "userControl1_Patients1";
-            this.userControl1_Patients1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Patients1.TabIndex = 2;
-            // 
-            // userControl1_Login1
-            // 
-            this.userControl1_Login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Login1.BackgroundImage")));
-            this.userControl1_Login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl1_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Login1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Login1.Name = "userControl1_Login1";
-            this.userControl1_Login1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Login1.TabIndex = 1;
-            // 
-            // userControl1_Channel1
-            // 
-            this.userControl1_Channel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Channel1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Channel1.Name = "userControl1_Channel1";
-            this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Channel1.TabIndex = 0;
-            // 
-            // admin_login1
-            // userControl1_PReg1
-            // 
-            // 
-            this.admin_login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_login1.BackgroundImage")));
-            this.userControl1_PReg1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_PReg1.BackgroundImage")));
-            this.admin_login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.admin_login1.Location = new System.Drawing.Point(0, 58);
-            this.admin_login1.Name = "admin_login1";
-            this.admin_login1.Size = new System.Drawing.Size(792, 409);
-            this.admin_login1.TabIndex = 11;
-            // 
             // admin_login2
             // 
             this.admin_login2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_login2.BackgroundImage")));
             this.admin_login2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.admin_login2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.admin_login2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.admin_login2.Location = new System.Drawing.Point(0, 0);
             this.admin_login2.Name = "admin_login2";
             this.admin_login2.Size = new System.Drawing.Size(877, 500);
-            this.admin_login2.TabIndex = 11;
+            this.admin_login2.TabIndex = 0;
             // 
             // doctorLogin1
             // 
@@ -410,7 +336,7 @@ namespace RAD_Project
             this.doctorLogin1.Location = new System.Drawing.Point(0, 0);
             this.doctorLogin1.Name = "doctorLogin1";
             this.doctorLogin1.Size = new System.Drawing.Size(877, 500);
-            this.doctorLogin1.TabIndex = 12;
+            this.doctorLogin1.TabIndex = 1;
             // 
             // pat_login1
             // 
@@ -420,7 +346,7 @@ namespace RAD_Project
             this.pat_login1.Location = new System.Drawing.Point(0, 0);
             this.pat_login1.Name = "pat_login1";
             this.pat_login1.Size = new System.Drawing.Size(877, 500);
-            this.pat_login1.TabIndex = 13;
+            this.pat_login1.TabIndex = 2;
             // 
             // patRegistrstion1
             // 
@@ -430,14 +356,52 @@ namespace RAD_Project
             this.patRegistrstion1.Location = new System.Drawing.Point(0, 0);
             this.patRegistrstion1.Name = "patRegistrstion1";
             this.patRegistrstion1.Size = new System.Drawing.Size(877, 500);
-            this.patRegistrstion1.TabIndex = 14;
+            this.patRegistrstion1.TabIndex = 3;
             // 
-            // Form1
-            this.userControl1_PReg1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_PReg1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_PReg1.Name = "userControl1_PReg1";
-            this.userControl1_PReg1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_PReg1.TabIndex = 9;
+            // userControl1_Admin1
+            // 
+            this.userControl1_Admin1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Admin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Admin1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Admin1.Name = "userControl1_Admin1";
+            this.userControl1_Admin1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Admin1.TabIndex = 4;
+            // 
+            // userControl1_Channel1
+            // 
+            this.userControl1_Channel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Channel1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Channel1.Name = "userControl1_Channel1";
+            this.userControl1_Channel1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Channel1.TabIndex = 5;
+            // 
+            // userControl1_Home1
+            // 
+            this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userControl1_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Home1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Home1.Name = "userControl1_Home1";
+            this.userControl1_Home1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Home1.TabIndex = 6;
+            // 
+            // userControl1_Login1
+            // 
+            this.userControl1_Login1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Login1.BackgroundImage")));
+            this.userControl1_Login1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl1_Login1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Login1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Login1.Name = "userControl1_Login1";
+            this.userControl1_Login1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Login1.TabIndex = 7;
+            // 
+            // userControl1_Patients1
+            // 
+            this.userControl1_Patients1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_Patients1.BackgroundImage")));
+            this.userControl1_Patients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Patients1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Patients1.Name = "userControl1_Patients1";
+            this.userControl1_Patients1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Patients1.TabIndex = 8;
             // 
             // userControl1_PInfo1
             // 
@@ -448,6 +412,33 @@ namespace RAD_Project
             this.userControl1_PInfo1.Name = "userControl1_PInfo1";
             this.userControl1_PInfo1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_PInfo1.TabIndex = 9;
+            // 
+            // userControl1_PReg1
+            // 
+            this.userControl1_PReg1.BackColor = System.Drawing.Color.Transparent;
+            this.userControl1_PReg1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_PReg1.BackgroundImage")));
+            this.userControl1_PReg1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl1_PReg1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_PReg1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_PReg1.Name = "userControl1_PReg1";
+            this.userControl1_PReg1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_PReg1.TabIndex = 10;
+            // 
+            // userControl1_Time3
+            // 
+            this.userControl1_Time3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1_Time3.Location = new System.Drawing.Point(0, 0);
+            this.userControl1_Time3.Name = "userControl1_Time3";
+            this.userControl1_Time3.Size = new System.Drawing.Size(877, 500);
+            this.userControl1_Time3.TabIndex = 11;
+            // 
+            // userControl1AboutUs1
+            // 
+            this.userControl1AboutUs1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControl1AboutUs1.Location = new System.Drawing.Point(0, 0);
+            this.userControl1AboutUs1.Name = "userControl1AboutUs1";
+            this.userControl1AboutUs1.Size = new System.Drawing.Size(877, 500);
+            this.userControl1AboutUs1.TabIndex = 12;
             // 
             // Form1
             // 
@@ -491,24 +482,23 @@ namespace RAD_Project
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel controllContainerPanel;
-        private UserControl1_Channel userControl1_Channel1;
-        private UserControl1_Login userControl1_Login1;
-        private UserControl1_Patients userControl1_Patients1;
         private UserControl1_Time userControl1_Time1;
         private UserControl1_Time userControl1_Time2;
-        private UserControl1AboutUs userControl1AboutUs1;
-        private UserControl1AboutUs userControl1AboutUs2;
-        private UserControl1_Home userControl1_Home1;
-        private UserControl1_Test userControl1_Test1;
         private Button AdminButton;
-        private UserControl1_Admin userControl1_Admin1;
         private Admin_login admin_login1;
-        private patRegistrstion patRegistrstion1;
-        private pat_login pat_login1;
-        private DoctorLogin doctorLogin1;
         private Admin_login admin_login2;
-        private UserControl1_PReg userControl1_PReg1;
+        private DoctorLogin doctorLogin1;
+        private pat_login pat_login1;
+        private patRegistrstion patRegistrstion1;
+        private UserControl1_Channel userControl1_Channel1;
+        private UserControl1_Admin userControl1_Admin1;
+        private UserControl1_Home userControl1_Home1;
+        private UserControl1_Login userControl1_Login1;
+        private UserControl1_Patients userControl1_Patients1;
         private UserControl1_PInfo userControl1_PInfo1;
+        private UserControl1_PReg userControl1_PReg1;
+        private UserControl1AboutUs userControl1AboutUs1;
+        private UserControl1_Time userControl1_Time3;
     }
 }
 

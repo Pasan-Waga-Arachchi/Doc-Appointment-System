@@ -39,7 +39,7 @@ namespace RAD_Project
                 {
                     FormController controller = FormController.Instance;
                     controller.hideAllUserControllers();
-                    Control userpat = controller.getUserControll("UserControl1_Time1");
+                    Control userpat = controller.getUserControll("userControl1_Time3");
                     userpat.Show();
                     controller.UserType = "Doctor";
                 }
