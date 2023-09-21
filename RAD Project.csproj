@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Admin.cs" />
     <Compile Include="Appoinment.cs" />
-    <Compile Include="DBconnection.cs" />
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Doctor.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -74,11 +74,23 @@
     <Compile Include="UserControl1_Admin.Designer.cs">
       <DependentUpon>UserControl1_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl1_Appoinmentnew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1_Appoinmentnew.Designer.cs">
+      <DependentUpon>UserControl1_Appoinmentnew.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1_Channel.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl1_Channel.Designer.cs">
       <DependentUpon>UserControl1_Channel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1_Doctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1_Doctor.Designer.cs">
+      <DependentUpon>UserControl1_Doctor.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1_Home.cs">
       <SubType>UserControl</SubType>
@@ -98,12 +110,6 @@
     <Compile Include="UserControl1_Patients.Designer.cs">
       <DependentUpon>UserControl1_Patients.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1_Test.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1_Test.Designer.cs">
-      <DependentUpon>UserControl1_Test.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl1_Time.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -121,6 +127,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControl1AboutUs.resx">
       <DependentUpon>UserControl1AboutUs.cs</DependentUpon>
@@ -128,8 +135,14 @@
     <EmbeddedResource Include="UserControl1_Admin.resx">
       <DependentUpon>UserControl1_Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1_Appoinmentnew.resx">
+      <DependentUpon>UserControl1_Appoinmentnew.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Channel.resx">
       <DependentUpon>UserControl1_Channel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1_Doctor.resx">
+      <DependentUpon>UserControl1_Doctor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Home.resx">
       <DependentUpon>UserControl1_Home.cs</DependentUpon>
@@ -139,9 +152,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Patients.resx">
       <DependentUpon>UserControl1_Patients.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1_Test.resx">
-      <DependentUpon>UserControl1_Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1_Time.resx">
       <DependentUpon>UserControl1_Time.cs</DependentUpon>
@@ -158,6 +168,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor_back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appoinment.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

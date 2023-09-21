@@ -48,7 +48,7 @@ namespace RAD_Project
             this.ExitButton = new System.Windows.Forms.Button();
             this.controllContainerPanel = new System.Windows.Forms.Panel();
             this.userControl1_Admin1 = new RAD_Project.UserControl1_Admin();
-            this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
+            //this.userControl1_Test1 = new RAD_Project.UserControl1_Test();
             this.userControl1_Home1 = new RAD_Project.UserControl1_Home();
             this.userControl1AboutUs2 = new RAD_Project.UserControl1AboutUs();
             this.userControl1AboutUs1 = new RAD_Project.UserControl1AboutUs();
@@ -266,7 +266,7 @@ namespace RAD_Project
             // controllContainerPanel
             // 
             this.controllContainerPanel.Controls.Add(this.userControl1_Admin1);
-            this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
+           // this.controllContainerPanel.Controls.Add(this.userControl1_Test1);
             this.controllContainerPanel.Controls.Add(this.userControl1_Home1);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs2);
             this.controllContainerPanel.Controls.Add(this.userControl1AboutUs1);
@@ -289,17 +289,10 @@ namespace RAD_Project
             this.userControl1_Admin1.Name = "userControl1_Admin1";
             this.userControl1_Admin1.Size = new System.Drawing.Size(877, 500);
             this.userControl1_Admin1.TabIndex = 10;
+            this.userControl1_Admin1.Load += new System.EventHandler(this.userControl1_Admin1_Load);
             // 
             // userControl1_Test1
-            // 
-            this.userControl1_Test1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userControl1_Test1.Location = new System.Drawing.Point(0, 0);
-            this.userControl1_Test1.Name = "userControl1_Test1";
-            this.userControl1_Test1.Size = new System.Drawing.Size(877, 500);
-            this.userControl1_Test1.TabIndex = 9;
-            // 
-            // userControl1_Home1
-            // 
+            
             this.userControl1_Home1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.userControl1_Home1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControl1_Home1.Location = new System.Drawing.Point(0, 0);
@@ -413,7 +406,6 @@ namespace RAD_Project
         private UserControl1AboutUs userControl1AboutUs1;
         private UserControl1AboutUs userControl1AboutUs2;
         private UserControl1_Home userControl1_Home1;
-        private UserControl1_Test userControl1_Test1;
         private Button AdminButton;
         private UserControl1_Admin userControl1_Admin1;
     }

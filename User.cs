@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RAD_Project
 {
-    abstract class User
+   public abstract class User
     {
         protected int user_Id;
         protected string user_Name;

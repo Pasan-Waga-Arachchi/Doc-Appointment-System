@@ -223,5 +223,10 @@ namespace RAD_Project
             /*Control AdminUsController = formController.getUserControll("UserControl1_Admin");
             AdminUsController.Show();*/
         }
+
+        private void userControl1_Admin1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
